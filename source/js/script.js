@@ -24,7 +24,6 @@ class App {
         } else {
           navMain.classList.add('main-nav--closed');
           navMain.classList.remove('main-nav--opened');
-          navButtonText.classList.remove('visually-hidden');
         }
       });
     }
@@ -35,7 +34,6 @@ class App {
       const navLinckHandleClick = () => {
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
-        navButtonText.classList.remove('visually-hidden');
       }
 
       links.forEach(link => {
