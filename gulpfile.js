@@ -50,7 +50,7 @@ const scripts = () => {
     // .pipe(terser())
     // .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
-    // .pipe(sync.stream());
+  // .pipe(sync.stream());
 }
 
 exports.scripts = scripts;
@@ -60,8 +60,8 @@ exports.scripts = scripts;
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
@@ -85,13 +85,13 @@ exports.videos = copyVideos;
 
 // WebP
 
-// const createWebp = () => {
-//   return gulp.src("source/img/**/*.{jpg,png}")
-//     .pipe(webp({quality: 90}))
-//     .pipe(gulp.dest("build/img"))
-// }
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"))
+}
 
-// exports.createWebp = createWebp;
+exports.createWebp = createWebp;
 
 // Sprite
 
@@ -173,14 +173,13 @@ const build = gulp.series(
     html,
     scripts,
     sprite,
-    // createWebp
+    createWebp
   ),
 );
 
 exports.build = build;
 
 // Default
-
 
 exports.default = gulp.series(
   clean,
@@ -192,7 +191,7 @@ exports.default = gulp.series(
     html,
     scripts,
     sprite,
-    // createWebp
+    createWebp
   ),
   gulp.series(
     server,
