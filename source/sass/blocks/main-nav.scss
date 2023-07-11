@@ -9,7 +9,6 @@
 
   @media (max-width: $tablet-width) {
     box-sizing: border-box;
-    z-index: 2;
     display: block;
     position: absolute;
     top: 0;
@@ -22,7 +21,6 @@
     .btn {
       display: flex;
       margin-top: 10vh;
-      color: $basic-white;
       width: max-content;
     }
 
@@ -36,6 +34,7 @@
 
     &--closed {
       background: transparent;
+      min-height: 85px;
 
       & .main-nav__list,
       .btn {
@@ -136,6 +135,7 @@
   background-color: $main-color;
   box-shadow: 0 12px 0 0 $main-color, 0 24px 0 0 $main-color;
   border-radius: 15px;
+  transition: all ease-in-out 500ms;
 }
 
 .main-nav--closed .main-nav__toggle {
@@ -164,6 +164,7 @@
     height: 4px;
     background-color: $main-color;
     border-radius: 15px;
+    transition: all ease-in-out 500ms;
   }
 
   &::before {

@@ -1,12 +1,12 @@
 .page-body {
-  margin: 0;
+  max-width: 1280px;
+  margin: 0 auto;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: $text-black;
 
-  @media (min-width: $tablet-width) {
-    max-width: 1280px;
-    margin: 0 auto;
+  @media (max-width: $tablet-width) {
+
   }
 }
