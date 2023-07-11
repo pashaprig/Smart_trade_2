@@ -2,7 +2,6 @@
   //Desktop-first
   display: flex;
   align-items: center;
-  padding: 40px 0;
 
   .btn {
     display: none;
@@ -22,6 +21,9 @@
 
     .btn {
       display: flex;
+      margin-top: 10vh;
+      color: $basic-white;
+      width: max-content;
     }
 
     & svg {
@@ -30,10 +32,6 @@
 
     & .main-nav__item > a {
       color: $bcg-black;
-    }
-
-    .btn {
-      margin-top: 38vh;
     }
 
     &--closed {
@@ -63,7 +61,7 @@
   gap: 34px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 50px;
+    margin-top: 25px;
     display: block;
 
     &--bottom {
@@ -75,44 +73,42 @@
 .main-nav__item {
   cursor: pointer;
 
+  &--shadow {
+    display: none;
+  }
+
+  a {
+    color: $text-black;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     display: flex;
     align-items: center;
     width: 100%;
     min-height: 28px;
-    margin-bottom: 20px;
-  }
-}
+    margin-bottom: 30px;
 
-.main-nav__item {
-  a {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    color: $white-text;
-  }
-
-  &--blc a {
-    color: $bcg-black;
-  }
-
-  @media (max-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.5;
+    &--shadow {
+      display: flex;
+      min-height: 10px;
+      margin-top: 50px;
+      box-shadow: 0px 0px 0px 0px rgba(222, 222, 222, 0.1), 0px 4px 10px 0px rgba(222, 222, 222, 0.1),
+      0px 18px 18px 0px rgba(222, 222, 222, 0.09), 0px 40px 24px 0px rgba(222, 222, 222, 0.05),
+      0px 71px 28px 0px rgba(222, 222, 222, 0.01), 0px 111px 31px 0px rgba(222, 222, 222, 0);
+    }
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 26px;
+  top: 20px;
   right: 16px;
   display: none;
   z-index: 2;
@@ -136,7 +132,7 @@
   top: 8px;
   right: 0;
   width: 45px;
-  height: 6px;
+  height: 4px;
   background-color: $main-color;
   box-shadow: 0 12px 0 0 $main-color, 0 24px 0 0 $main-color;
   border-radius: 15px;
@@ -165,7 +161,7 @@
     top: 20px;
     right: 0;
     width: 45px;
-    height: 6px;
+    height: 4px;
     background-color: $main-color;
     border-radius: 15px;
   }
@@ -187,16 +183,5 @@
   &:active::before,
   &:active::after {
     opacity: 0.3;
-  }
-}
-
-.main-nav__open-btn-text {
-  font-family: "Segoe-UI", "Arial", sans-serif;
-  color: $basic-black;
-
-  @media (max-width: $tablet-width) {
-    font-weight: 350;
-    font-size: 14px;
-    line-height: 120%;
   }
 }

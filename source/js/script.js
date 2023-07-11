@@ -29,7 +29,8 @@ class App {
     }
 
     const linksClick = () => {
-      const links = document.querySelectorAll('.main-nav__item');
+      const mainNav = document.querySelector('.main-nav');
+      const links = mainNav.querySelectorAll('a');
 
       const navLinckHandleClick = () => {
         navMain.classList.add('main-nav--closed');
