@@ -68,10 +68,19 @@
       <div class="promo__wrapper  promo__wrapper--mw53">
         <div class="promo__video-bcg">
           <div class="promo__video">
-            <iframe src="https://www.youtube.com/embed/d5CQUYYCdZ0"
-              style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-            </iframe>
+            <button type="button" id="button-play">
+              <svg width="38" height="44">
+                <use xlink:href="img/sprite.svg#play"></use>
+              </svg>
+            </button>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe
+                src="https://player.vimeo.com/video/833805934?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&loop=1&"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Yandex_land">
+              </iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
         </div>
       </div>
@@ -189,7 +198,7 @@
         </picture>
 
         <button class="btn" data-open-modal>
-          <svg  width="74" height="56">
+          <svg width="74" height="56">
             <use xlink:href="img/sprite.svg#arrow"></use>
           </svg>
           <span>Развернуть лицензию</span>
@@ -206,6 +215,98 @@
         </dialog>
       </div>
     </section>
+
+    <section class="start container" id="start">
+      <div class="start__info-wrapper">
+        <h2 class="start__heading heading">Как начать инвестировать вместе с Halyk банк?</h2>
+        <div class="start__info">
+          <div class="start__text-wrapper">
+            <div class="start__about start__about--top start__about--active">
+              <span class="start__step">Шаг 1</span>
+              <p class="start__text">Для начала инвестирования достаточно всего лишь оставить заявку на сайте</p>
+              <span class="start__circle start__circle--top"></span>
+            </div>
+            <div class="start__about start__about--center">
+              <span class="start__step">Шаг 2</span>
+              <p class="start__text">После того, как Вы оставили заявку на сайте с вами свяжется консультант и ответит
+                на все вопросы</p>
+              <span class="start__circle start__circle--middle"></span>
+            </div>
+            <div class="start__about start__about--center">
+              <span class="start__step">Шаг 3</span>
+              <p class="start__text">Сделать минамальный депозит в размере 65 000 ₸</p>
+              <span class="start__circle start__circle--middle"></span>
+            </div>
+            <div class="start__about start__about--end">
+              <span class="start__step">Шаг 4</span>
+              <p class="start__text">Далее, остается лишь ждать выплат от программы</p>
+              <span class="start__circle start__circle--bottom"></span>
+            </div>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="img/img/flagsontable.webp">
+            <img class="start__img" src="img/img/flagsontable.jpg" height="400" width="600" alt="Флажки">
+          </picture>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="review container">
+      <h2 class="review__heading heading">Отзывы наших клиентов</h2>
+      <p class="review__about">Halyk банк задуман как финансовый актив и нативный расчетный инструмент в блокчейн сети
+        Сбербанка - крупнейшего банка Казахстана. По итогам 2019 года у «Halyk Bank» 96,2 млн активных частных клиентов
+        и 2,6 млн активных корпоративных клиентов, именно в этом году было принято запустить свою криптовалюту.</p>
+      <div class="slider">
+        <div class="review__card slider__item">
+          <div class="review__avatae-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/avatars/latif.webp">
+              <img width="60" height="60" class="review__img" src="img/avatars/latif.jpg" alt="Пірәліұлы Латиф">
+            </picture>
+            <div class="review__name-wrapper">
+              <cite>Пірәліұлы Латиф</cite>
+              <span class="review__nik">@Butterbean</span>
+            </div>
+          </div>
+          <blockquote class="review__blockquote">Проект помог мне выбраться из финансовой ямы во время карантина
+            и действительно изменил мою жизнь!</blockquote>
+          <p class="review__time">23:02| Май 23,2023</p>
+        </div>
+
+        <div class="review__card slider__item">
+          <div class="review__avatae-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/avatars/ismetuly.webp">
+              <img width="60" height="60" class="review__img" src="img/avatars/ismetuly.jpg" alt="Ісметұлы Латиф">
+            </picture>
+            <div class="review__name-wrapper">
+              <cite>Ісметұлы Латиф</cite>
+              <span class="review__nik">@Gamethe</span>
+            </div>
+          </div>
+          <blockquote class="review__blockquote">Решил попробовать себя в роли инвестора на проекте. Не имея опыта, я
+            сразу влился в процесс и начал зарабатывать 500 евро </blockquote>
+          <p class="review__time">13:33| Февраль 12,2023</p>
+        </div>
+
+        <div class="review__card slider__item">
+          <div class="review__avatae-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/avatars/damen.webp">
+              <img width="60" height="60" class="review__img" src="img/avatars/damen.jpg" alt="Ошақбайұлы Дәмен">
+            </picture>
+            <div class="review__name-wrapper">
+              <cite>Ошақбайұлы Дәмен</cite>
+              <span class="review__nik">@Ckyliу453</span>
+            </div>
+          </div>
+          <blockquote class="review__blockquote">Проект — реальная возможность обеспечить себе достойную жизнь.Очень
+            удобно и легко — всем советую.</blockquote>
+          <p class="review__time">18:37| Март 1,2023</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -213,6 +314,7 @@
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

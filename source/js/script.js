@@ -5,6 +5,16 @@ class App {
     this.initMobileMenu();
     this.initRange();
     this.showHideLicense();
+    this.scroll();
+    this.initSlider();
+    this.afterVideoPlay();
+    this.onButtonPlay();
+  }
+
+  constructor() {
+    this.iframe = document.querySelector('iframe');
+    this.player = new Vimeo.Player(this.iframe);
+    this.btnPlay = document.querySelector('#button-play')
   }
 
   initMobileMenu() {
@@ -115,6 +125,86 @@ class App {
         $modal.close()
       }
     })
+  }
+
+  scroll() {
+    let scrollToFirst, scrollToLast;
+    const deviceWidth = document.documentElement.clientWidth
+
+    if (deviceWidth > 768) {
+      // desktop
+      scrollToFirst = 2200;
+      scrollToLast =2600
+    } else {
+      // mobile
+      scrollToFirst = 3400;
+      scrollToLast = 3800
+    }
+
+    const circles = document.querySelectorAll('.start__about')
+
+    function resetColors() {
+      circles.forEach(c => { c.classList.remove('start__about--active') })
+    }
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset < scrollToFirst) {
+        resetColors();
+        circles[0].classList.add('start__about--active')
+      } else if (window.pageYOffset < scrollToLast) {
+        resetColors();
+        circles[1].classList.add('start__about--active')
+      } else if (window.pageYOffset > scrollToLast) {
+        resetColors();
+        circles[2].classList.add('start__about--active')
+      }
+    })
+
+  }
+
+  initSlider() {
+    $(function () {
+      $('.slider').slick({
+        arrows: false,
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              dots: true,
+            }
+          },
+        ]
+      });
+    })
+  }
+
+  afterVideoPlay() {
+    const vidoWrapper = document.querySelector('.promo__video')
+
+    const onPlay = () => {
+      vidoWrapper.style.borderRadius = 'unset';
+      this.btnPlay.style.display = 'none'
+    };
+
+    this.player.on('play', onPlay);
+  }
+
+  onButtonPlay() {
+    const playVideo = () => {
+      this.player.play()
+      this.btnPlay.style.display = 'none'
+    }
+
+    this.btnPlay.addEventListener('click', playVideo);
   }
 }
 
