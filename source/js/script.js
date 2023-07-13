@@ -4,6 +4,7 @@ class App {
   init() {
     this.initMobileMenu();
     this.initRange();
+    this.showHideLicense();
   }
 
   initMobileMenu() {
@@ -84,6 +85,36 @@ class App {
         },
       });
     });
+  }
+
+  showHideLicense() {
+    const $openBtn = document.querySelector('[data-open-modal]')
+    const $closeBtn = document.querySelector('[data-close-modal]')
+    const $modal = document.querySelector('[data-modal]')
+    const $licenseImg = document.querySelector('.license__img')
+
+    $licenseImg.addEventListener('click', showModal);
+    $openBtn.addEventListener('click', showModal);
+
+    function showModal() {
+      $modal.showModal();
+    }
+
+    $closeBtn.addEventListener('click', () => {
+      $modal.close()
+    })
+
+    $modal.addEventListener('click', e => {
+      const dialogDimentions = $modal.getBoundingClientRect()
+      if (
+        e.clientX < dialogDimentions.left ||
+        e.clientX > dialogDimentions.right ||
+        e.clientY < dialogDimentions.top ||
+        e.clientY > dialogDimentions.bottom
+      ) {
+        $modal.close()
+      }
+    })
   }
 }
 
