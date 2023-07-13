@@ -3,17 +3,18 @@
   justify-content: space-between;
   gap: 5px;
   margin-bottom: 150px;
+  padding: 0 50px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
     margin-bottom: 60px;
+    padding: 0;
   }
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 50px;
 
   &--mw53 {
     min-width: 53%;
