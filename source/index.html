@@ -28,12 +28,12 @@
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--shadow"></li>
-        <li class="main-nav__item"><a href="#advantages">Преимущества</a></li>
+        <li class="main-nav__item"><a href="#bank">Преимущества</a></li>
         <li class="main-nav__item"><a href="#calculator">Калькулятор</a></li>
-        <li class="main-nav__item"><a href="#bank">Halyk Bank</a></li>
+        <li class="main-nav__item"><a href="#about-bank">Halyk Bank</a></li>
         <li class="main-nav__item"><a href="#license">Лицензия</a></li>
-        <li class="main-nav__item"><a href="#investing">Инвестирование</a></li>
-        <li class="main-nav__item"><a href="#reviews">Отзывы</a></li>
+        <li class="main-nav__item"><a href="#start">Инвестирование</a></li>
+        <li class="main-nav__item"><a href="#review">Отзывы</a></li>
       </ul>
       <a class="btn mobile-only" href="#leadform1">Присоединиться к проекту</a>
       <button class="main-nav__toggle" type="button">
@@ -86,7 +86,7 @@
       </div>
     </section>
 
-    <section class="bank container">
+    <section class="bank container" id="bank">
       <p class="bank__about">Halyk банк продолжает свою миссию предоставления широкого спектра финансовых услуг в
         Казахстане и других странах в соответствии с международными стандартами. Они стремятся обеспечить сохранность,
         эффективное размещение и увеличение средств клиентов и акционеров во всех сегментах финансового рынка, включая
@@ -107,7 +107,7 @@
       </ul>
     </section>
 
-    <section class="calculator container">
+    <section class="calculator container" id="calculator">
       <div class="calculator__wrapper">
         <h2 class="profit__heading heading heading--small">Калькулятор</h2>
         <p class="calculator__about">Просчитайте ваш доход всего за пару минут</p>
@@ -134,7 +134,7 @@
       </div>
     </section>
 
-    <section class="about-bank container">
+    <section class="about-bank container" id="about-bank">
       <h2 class="heading heading--small">Про Halyk банк</h2>
       <p class="about-bank__about about-bank__about--pr220">Наша разработанная командой технология автотрейдинга
         позволяет зарабатывать на акциях, индексах. Программа успешно внедрена в 12 лицензированных брокерах СНГ и
@@ -187,7 +187,7 @@
       </ul>
     </section>
 
-    <section class="license container">
+    <section class="license container" id="license">
       <div class="license__gradient"></div>
       <div class="license__wrapper">
         <h2 class="license__heading heading">Лицензия на использование Halyk Bank в&nbsp;биржевой деятельности
@@ -252,7 +252,7 @@
 
     </section>
 
-    <section class="review container">
+    <section class="review container" id="review">
       <h2 class="review__heading heading">Отзывы наших клиентов</h2>
       <p class="review__about">Halyk банк задуман как финансовый актив и нативный расчетный инструмент в блокчейн сети
         Сбербанка - крупнейшего банка Казахстана. По итогам 2019 года у «Halyk Bank» 96,2 млн активных частных клиентов
@@ -307,10 +307,49 @@
         </div>
       </div>
     </section>
+
+    <section class="come-on container">
+      <h2 class="come-on__heading heading">Получай дивиденды от 150 000 ₸ в неделю</h2>
+      <p class="come-on__about">Стань одним из первых инвесторов, приобретающих акции самого крупного банка в Казахстане.</p>
+      <form action="#" class="form form--bottom" method="POST" id="leadform1">
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <input type="email" name="email" id="email" placeholder="Эл. адрес">
+        <input type="tel" name="phone1" placeholder="" id="phone1" />
+        <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+        <input type="hidden" name="currency" value="usd">
+        <input id="country1" type="hidden" name="country" value="ru">
+        <input type="hidden" name="comment" class="comment" value="">
+        <input type="hidden" name="campaign_name" value="">
+        <button class="btn submit_btn" type="submit">
+          <span>Отправить заявку</span>
+        </button>
+        <div class="form_message error inactive"
+          style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
+        </div>
+      </form>
+    </section>
   </main>
 
-  <footer class="page-footer">
-    Footer
+  <footer class="page-footer container">
+    <div class="page-footer__wrapper">
+      <picture>
+        <source type="image/webp" srcset="img/img/logo.webp">
+        <img width="182" height="64" class="page-header__img" src="img/img/logo.png" alt="Логотип Halyk Bank">
+      </picture>
+      <p class="page-footer__year">© 2004 - 2023 Halyk Bank</p>
+      <a href="#leadform1" class="page-footer__polycy">Политика конфиденциальности</a>
+      <a href="#leadform1" class="page-footer__polycy">Правила использования</a>
+    </div>
+    <nav class="page-footer__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#bank">Преимущества</a></li>
+        <li class="main-nav__item"><a href="#calculator">Калькулятор</a></li>
+        <li class="main-nav__item"><a href="#about-bank">Halyk Bank</a></li>
+        <li class="main-nav__item"><a href="#license">Лицензия</a></li>
+        <li class="main-nav__item"><a href="#start">Инвестирование</a></li>
+        <li class="main-nav__item"><a href="#review">Отзывы</a></li>
+      </ul>
+    </nav>
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>

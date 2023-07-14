@@ -44,11 +44,12 @@
 .start__info {
   display: flex;
   justify-content: space-between;
-  gap: 90px;
+  margin-left: 40px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
     gap: 40px;
+    margin-left: unset;
   }
 }
 

@@ -5,6 +5,13 @@
   gap: 30px;
   width: 300px;
 
+  &--bottom {
+    .btn {
+      max-width: 242px;
+      margin: 0 auto;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     width: 100%;
     margin-bottom: 30px;
@@ -12,6 +19,8 @@
 }
 
 input {
+  box-sizing: border-box;
+  max-height: 45px;
   padding: 22px 10px;
   font-size: 15px;
   font-weight: 400;

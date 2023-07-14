@@ -45,7 +45,7 @@
 
 .promo__video-bcg {
   box-sizing: border-box;
-  height: 550px;
+  height: max-content;
   padding-bottom: 45px;
   padding-left: 45px;
   background: linear-gradient(180deg, rgba(236, 128, 37, 0.5) 0%, rgba(67, 147, 83, 0.5) 100%);
@@ -77,7 +77,7 @@
     height: 80px;
     background: $play-btn-color;
     border-radius: 50%;
-
+    border: none;
     svg {
       margin-left: 8px;
       fill: $basic-white;

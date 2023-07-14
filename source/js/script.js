@@ -128,17 +128,21 @@ class App {
   }
 
   scroll() {
-    let scrollToFirst, scrollToLast;
+    let scrollToFirst, scrollToSecond, scrollToThird, scrollToLast;
     const deviceWidth = document.documentElement.clientWidth
 
     if (deviceWidth > 768) {
       // desktop
-      scrollToFirst = 2200;
-      scrollToLast =2600
+      scrollToFirst = 4700
+      scrollToSecond =4850
+      scrollToThird =5000
+      scrollToLast =5200
     } else {
       // mobile
-      scrollToFirst = 3400;
-      scrollToLast = 3800
+      scrollToFirst = 5200
+      scrollToSecond =5400
+      scrollToThird =5700
+      scrollToLast =5900
     }
 
     const circles = document.querySelectorAll('.start__about')
@@ -151,12 +155,15 @@ class App {
       if (window.pageYOffset < scrollToFirst) {
         resetColors();
         circles[0].classList.add('start__about--active')
-      } else if (window.pageYOffset < scrollToLast) {
+      } else if (window.pageYOffset < scrollToSecond) {
         resetColors();
         circles[1].classList.add('start__about--active')
-      } else if (window.pageYOffset > scrollToLast) {
+      } else if (window.pageYOffset < scrollToThird) {
         resetColors();
         circles[2].classList.add('start__about--active')
+      } else if (window.pageYOffset > scrollToLast) {
+        resetColors();
+        circles[3].classList.add('start__about--active')
       }
     })
 
