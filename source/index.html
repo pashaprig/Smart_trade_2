@@ -17,6 +17,98 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+
+    <!-- Facebook Pixel Code -->
+    <!-- <script>
+      ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      <?php if (!empty($_GET['fb_pixel'])) : ?>
+        <?php foreach (explode(',', $_GET['fb_pixel']) as $pixel) : ?>
+          fbq('init', '<?= trim($pixel); ?>');
+        <?php endforeach; ?>
+      <?php else : ?>
+        fbq('init', '<?php echo isset($_GET['fb_pixel']) ? $_GET['fb_pixel'] : '000000000000000'; ?>');
+      <?php endif; ?>
+      fbq('track', 'PageView');
+    </script> -->
+
+    <!-- <noscript>
+      <?php if (!empty($_GET['fb_pixel'])) : ?>
+        <?php foreach (explode(',', $_GET['fb_pixel']) as $pixel) : ?>
+          <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=<?= trim($pixel); ?>&ev=PageView&noscript=1" />
+        <?php endforeach; ?>
+      <?php else : ?>
+        <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=<?php echo isset($_GET['fb_pixel']) ? $_GET['fb_pixel'] : '000000000000000'; ?>&ev=PageView&noscript=1" />
+      <?php endif; ?>
+    </noscript> -->
+    <!-- End Facebook Pixel Code -->
+
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-<?php echo isset($_GET['ga_id']) ? $_GET['ga_id'] : '000000000000000'; ?>"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'AW-<?php echo isset($_GET['ga_id']) ? $_GET['ga_id'] : '000000000000000'; ?>');
+    </script> -->
+<!--
+    <script>
+      function call_gtag() {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-<?php echo isset($_GET['ga_id']) ? $_GET['ga_id'] : '000000000000000'; ?>/<?php echo isset($_GET['ga_event']) ? $_GET['ga_event'] : '000000000000000'; ?>'
+        });
+      }
+    </script> -->
+    <!-- End GTAG Code -->
+
+    <!-- TikTok Code -->
+    <!-- <script>
+      ! function(w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = w[t] = w[t] || [];
+        ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function(t, e) {
+          t[e] = function() {
+            t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        };
+        for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+        ttq.instance = function(t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+          return e
+        }, ttq.load = function(e, n) {
+          var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {};
+          var o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t;
+          var a = document.getElementsByTagName("script")[0];
+          a.parentNode.insertBefore(o, a)
+        };
+
+        ttq.load('<?php echo isset($_GET['tiktok']) ? $_GET['tiktok'] : '000000000000000'; ?>');
+      }(window, document, 'ttq');
+    </script> -->
+    <!-- End TikTok Code -->
 </head>
 
 <body class="page-body">
@@ -311,13 +403,13 @@
     <section class="come-on container">
       <h2 class="come-on__heading heading">Получай дивиденды от 150 000 ₸ в неделю</h2>
       <p class="come-on__about">Стань одним из первых инвесторов, приобретающих акции самого крупного банка в Казахстане.</p>
-      <form action="#" class="form form--bottom" method="POST" id="leadform1">
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-        <input type="email" name="email" id="email" placeholder="Эл. адрес">
-        <input type="tel" name="phone1" placeholder="" id="phone1" />
-        <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+      <form action="#" class="form form--bottom" method="POST" id="leadform2">
+        <input type="text" name="name" id="name2" placeholder="Имя Фамилия">
+        <input type="email" name="email" id="email2" placeholder="Эл. адрес">
+        <input type="tel" name="phone2" placeholder="" id="phone2" />
+        <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="" />
         <input type="hidden" name="currency" value="usd">
-        <input id="country1" type="hidden" name="country" value="ru">
+        <input id="country2" type="hidden" name="country" value="ru">
         <input type="hidden" name="comment" class="comment" value="">
         <input type="hidden" name="campaign_name" value="">
         <button class="btn submit_btn" type="submit">
@@ -355,6 +447,306 @@
   <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/intlTelInput.min.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+
+  <script>
+    //phone
+    //first form
+    var input1 = document.querySelector("#phone1");
+    var phoneInput1 = window.intlTelInput(input1, {
+      separateDialCode: true,
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      initialCountry: "auto",
+      excludeCountries: ["UA"],
+      geoIpLookup: function(success, failure) {
+        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+          console.log(resp.country);
+          $("#country1").val(resp.country);
+          $("#country2").val(resp.country);
+          var countryCode =
+            resp && checkCountry(resp.country) ? resp.country : "DE";
+          success(countryCode);
+        });
+      },
+    });
+
+
+    function checkCountry(code) {
+      var arr = ["UA"];
+      console.log(code);
+      console.log(arr.includes(code));
+      return !arr.includes(code);
+    }
+
+    $.validator.addMethod(
+      "validNumber",
+      function(value, element, params) {
+        var obj = params.object;
+        if (obj.isValidNumber()) {
+          var num = obj.getNumber().replace("+", "");
+          console.log(num);
+          $(element)
+            .closest("form")
+            .find(".hidden-phone")
+            .val("+" + num);
+        }
+        return obj.isValidNumber();
+      },
+      "ⓘ Введите правильный номер!"
+    );
+
+    // Запрет ввода в поля больше двух пробелов подряд
+    const nameForm1 = document.querySelector("#name");
+    const nameForm2 = document.querySelector("#name2");
+    const emailForm1 = document.querySelector("#email");
+    const emailForm2 = document.querySelector("#email2");
+
+    function removeExtraSpaces(e) {
+      const valueWithoutSpaces = e.target.value.replace(/\s+/g, ' ').replace(/^\s+|\s+$/, '');
+      e.target.value = valueWithoutSpaces
+    }
+    nameForm1.addEventListener("focusout", removeExtraSpaces);
+    nameForm2.addEventListener("focusout", removeExtraSpaces);
+
+    // Валидация формы
+    $.validator.addMethod(
+      "alphanumeric",
+      function(value, element) {
+        return this.optional(element) || /^[a-zA-Zа-яА-ЯЁё\s]+$/.test(value.replace(/ +/g, ' ').trim()); //RU
+      },
+      "ⓘ Имя может содержать только буквы!"
+    );
+
+    $.validator.addMethod(
+      "nameSurname",
+      function(value, element) {
+        return this.optional(element) || /^[a-zA-Zа-яА-ЯЁё]+(\s+[a-zA-Zа-яА-ЯЁё]+)$/.test(value.replace(/ +/g, ' ').trim()); //RU
+      },
+      "ⓘ Укажите имя и фамилию через пробел"
+    );
+
+    // Email validation
+    $.validator.addMethod("emailValidation", function(value, element) {
+      return this.optional(element) || /^[a-zA-Z0-9_.!#$%&\'*+\-\/=?^_`{|}~]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,61}$/g.test(value);
+    }, "ⓘ Введите правильный адрес");
+
+
+    function removeDotsHyphens(e) {
+      const valueWithoutDotsHyphens = e.target.value.replace(/\.+/g, '.').replace(/-{2,}/g, '--').replace(/^\.|^-*/, '').replace(/\.@/, '@');
+      e.target.value = valueWithoutDotsHyphens;
+    }
+    emailForm1.addEventListener("change", removeDotsHyphens);
+    emailForm2.addEventListener("change", removeDotsHyphens);
+
+    //Trim whitespace on email input
+    $(function() {
+      $('input[type=email]').on('keypress', function(e) {
+        if (e.which == 32)
+          return false;
+      });
+    });
+
+    $("#leadform1").validate({
+      rules: {
+        phone1: {
+          required: true,
+          validNumber: {
+            object: phoneInput1,
+          },
+        },
+        name: {
+          required: true,
+          alphanumeric: true,
+          nameSurname: true,
+        },
+        email: {
+          required: true,
+          email: false,
+          emailValidation: true,
+        }
+      },
+      messages: {
+        phone1: {
+          required: "ⓘ Это поле обязательное",
+        },
+        name: {
+          required: "ⓘ Это поле обязательное",
+        },
+        email: {
+          required: "ⓘ Это поле обязательное"
+        },
+      },
+      submitHandler: function(form, event) {
+        sendAjaxForm(form);
+        return false;
+
+      }
+    });
+
+    function sendAjaxForm(form) {
+      $.ajax({
+        url: $(form).attr('action'),
+        type: "POST", //метод отправки
+        dataType: "json", //формат данных
+        data: $(form).serialize(), // Сеарилизуем объект
+        timeout: 30000,
+        beforeSend: function() {
+          $(form).find(".submit_btn ").html('Отправление');
+          $(form).find(".submit_btn").prop('disabled', true); // disable button
+        },
+
+      }).done(function(response) { //Данные отправлены успешно
+        let result = response;
+        let url = result.url;
+        console.log(response);
+        if (response.status === 'ok') {
+          fbq('track', 'Lead');
+          call_gtag();
+          ttq.page();
+          console.log('Lead');
+          $(form).find(".submit_btn").html('Данные отправлены успешно.');
+          if (response.url) {
+            setTimeout(function() {
+              window.location.href = response.url;
+            }, 1000);
+          } else {
+            $(form).html('<div class="form_message success" style="display: block;margin:15px 0;background-color: #d4ffe0;border: 2px dashed #1f6b34;border-radius: 10px;padding: 20px; color:#0d0c0c">Ваши данные успешно отправлены. Ожидайте звонка от нашего менеджера.</div>');
+          }
+
+        } else {
+          $(form).find('.error.form_message').addClass('active');
+          $(form).find('.error.form_message').html(response.message);
+          $(form).find(".submit_btn ").html('Начать зарабатывать');
+          $(form).find(".submit_btn").prop('disabled', false); // disable button
+        }
+
+
+      }).fail(function(response) { // Данные не отправлены
+        console.log(response);
+        console.log('Ошибка. Данные не отправлены.');
+        $(form).find('.error.form_message').addClass('active');
+        $(form).find('.error.form_message').html('Во время отправки данных произошла ошибка!');
+        $(form).find(".submit_btn ").html('Начать зарабатывать');
+        $(form).find(".submit_btn").prop('disabled', false); // disable button
+      });
+    }
+
+    $(window).on("load", function() {
+      setTimeout(function() {
+        const selectedCountryIso1 = phoneInput1.getSelectedCountryData().iso2;
+        if (selectedCountryIso1 === 'at' || selectedCountryIso1 === 'de') {
+          var mask1 = jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9) + "?9?9";
+        } else {
+          var mask1 = jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9);
+        }
+
+        $(document).ready(function() {
+          jQuery("#phone1").mask(mask1, {
+            autoclear: false
+          });
+        });
+
+        jQuery("#phone1").on("countrychange", function(e, countryData) {
+          jQuery("#phone1").val("");
+          const selectedCountryIso1 = phoneInput1.getSelectedCountryData().iso2;
+          if (selectedCountryIso1 === 'at' || selectedCountryIso1 === 'de') {
+            var mask1 = jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9) + "?9?9";
+          } else {
+            var mask1 = jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9);
+          }
+          jQuery("#phone1").mask(mask1, {
+            autoclear: false
+          });
+        });
+      }, 1000);
+    });
+    //second form
+    var input2 = document.querySelector("#phone2");
+    var phoneInput2 = window.intlTelInput(input2, {
+      separateDialCode: true,
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      initialCountry: "auto",
+      excludeCountries: ["UA"],
+      geoIpLookup: function(success, failure) {
+        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+          console.log(resp.country);
+          var countryCode =
+            resp && checkCountry(resp.country) ? resp.country : "DE";
+          success(countryCode);
+        });
+      },
+    });
+
+    $("#leadform2").validate({
+      rules: {
+        phone2: {
+          required: true,
+          validNumber: {
+            object: phoneInput2,
+          },
+        },
+        name: {
+          required: true,
+          alphanumeric: true,
+          nameSurname: true,
+        },
+        email: {
+          required: true,
+          email: false,
+          emailValidation: true,
+        }
+      },
+      messages: {
+        phone2: {
+          required: "ⓘ Это поле обязательное",
+        },
+        name: {
+          required: "ⓘ Это поле обязательное",
+        },
+        email: {
+          required: "ⓘ Это поле обязательное",
+        },
+      },
+      submitHandler: function(form, event) {
+        sendAjaxForm(form);
+        return false;
+
+      },
+    });
+
+    $(window).on("load", function() {
+      setTimeout(function() {
+        const selectedCountryIso2 = phoneInput2.getSelectedCountryData().iso2;
+        if (selectedCountryIso2 === 'at' || selectedCountryIso2 === 'de') {
+          var mask1 = jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9) + "?9?9";
+        } else {
+          var mask1 = jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9);
+        }
+
+        $(document).ready(function() {
+          jQuery("#phone2").mask(mask1, {
+            autoclear: false
+          });
+        });
+
+        jQuery("#phone2").on("countrychange", function(e, countryData) {
+          jQuery("#phone2").val("");
+          const selectedCountryIso2 = phoneInput2.getSelectedCountryData().iso2;
+          if (selectedCountryIso2 === 'at' || selectedCountryIso2 === 'de') {
+            var mask1 = jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9) + "?9?9";
+          } else {
+            var mask1 = jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9);
+          }
+          jQuery("#phone2").mask(mask1, {
+            autoclear: false
+          });
+        });
+      }, 1000);
+    });
+    //
+  </script>
 </body>
 
 </html>
