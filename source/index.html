@@ -462,7 +462,6 @@
       excludeCountries: ["UA"],
       geoIpLookup: function(success, failure) {
         $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-          console.log(resp.country);
           $("#country1").val(resp.country);
           $("#country2").val(resp.country);
           var countryCode =
@@ -475,8 +474,6 @@
 
     function checkCountry(code) {
       var arr = ["UA"];
-      console.log(code);
-      console.log(arr.includes(code));
       return !arr.includes(code);
     }
 
@@ -486,7 +483,6 @@
         var obj = params.object;
         if (obj.isValidNumber()) {
           var num = obj.getNumber().replace("+", "");
-          console.log(num);
           $(element)
             .closest("form")
             .find(".hidden-phone")
@@ -497,7 +493,6 @@
       "ⓘ Введите правильный номер!"
     );
 
-    // Запрет ввода в поля больше двух пробелов подряд
     const nameForm1 = document.querySelector("#name");
     const nameForm2 = document.querySelector("#name2");
     const emailForm1 = document.querySelector("#email");
@@ -510,7 +505,7 @@
     nameForm1.addEventListener("focusout", removeExtraSpaces);
     nameForm2.addEventListener("focusout", removeExtraSpaces);
 
-    // Валидация формы
+    // Form validation
     $.validator.addMethod(
       "alphanumeric",
       function(value, element) {
@@ -588,24 +583,22 @@
     function sendAjaxForm(form) {
       $.ajax({
         url: $(form).attr('action'),
-        type: "POST", //метод отправки
-        dataType: "json", //формат данных
-        data: $(form).serialize(), // Сеарилизуем объект
+        type: "POST",
+        dataType: "json",
+        data: $(form).serialize(),
         timeout: 30000,
         beforeSend: function() {
           $(form).find(".submit_btn ").html('Отправление');
-          $(form).find(".submit_btn").prop('disabled', true); // disable button
+          $(form).find(".submit_btn").prop('disabled', true);
         },
 
-      }).done(function(response) { //Данные отправлены успешно
+      }).done(function(response) {
         let result = response;
         let url = result.url;
-        console.log(response);
         if (response.status === 'ok') {
           fbq('track', 'Lead');
           call_gtag();
           ttq.page();
-          console.log('Lead');
           $(form).find(".submit_btn").html('Данные отправлены успешно.');
           if (response.url) {
             setTimeout(function() {
@@ -619,17 +612,15 @@
           $(form).find('.error.form_message').addClass('active');
           $(form).find('.error.form_message').html(response.message);
           $(form).find(".submit_btn ").html('Начать зарабатывать');
-          $(form).find(".submit_btn").prop('disabled', false); // disable button
+          $(form).find(".submit_btn").prop('disabled', false);
         }
 
 
-      }).fail(function(response) { // Данные не отправлены
-        console.log(response);
-        console.log('Ошибка. Данные не отправлены.');
+      }).fail(function(response) {
         $(form).find('.error.form_message').addClass('active');
         $(form).find('.error.form_message').html('Во время отправки данных произошла ошибка!');
         $(form).find(".submit_btn ").html('Начать зарабатывать');
-        $(form).find(".submit_btn").prop('disabled', false); // disable button
+        $(form).find(".submit_btn").prop('disabled', false);
       });
     }
 
@@ -662,6 +653,7 @@
         });
       }, 1000);
     });
+
     //second form
     var input2 = document.querySelector("#phone2");
     var phoneInput2 = window.intlTelInput(input2, {
@@ -671,7 +663,6 @@
       excludeCountries: ["UA"],
       geoIpLookup: function(success, failure) {
         $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-          console.log(resp.country);
           var countryCode =
             resp && checkCountry(resp.country) ? resp.country : "DE";
           success(countryCode);
@@ -745,7 +736,7 @@
         });
       }, 1000);
     });
-    //
+
   </script>
 </body>
 
