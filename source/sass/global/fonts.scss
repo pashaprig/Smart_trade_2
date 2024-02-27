@@ -33,3 +33,15 @@
     url("../fonts/inter/Inter-Bold.woff") format("woff"),
     url("../fonts/inter/Inter-Bold.ttf") format("truetype");
 }
+
+// Proxima Nova
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("ProximaNova-Regular"),
+    url("../fonts/proxima_nova/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/proxima_nova/ProximaNova-Regular.ttf") format("truetype");
+}
