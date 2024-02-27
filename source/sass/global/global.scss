@@ -82,18 +82,13 @@ button {
 }
 
 .heading {
-  margin-bottom: 30px;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 48px;
-  font-weight: 400;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 700;
 
   &--small {
     margin-bottom: 25px;
     font-size: 36px;
-  }
-
-  @media (max-width: $tablet-width) {
-    font-size: 24px;
   }
 }
 
