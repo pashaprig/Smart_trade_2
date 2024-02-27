@@ -1,13 +1,9 @@
 .page-body {
   max-width: 1280px;
   margin: 0 auto;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: normal;
+  font-size: 24px;
   color: $basic-white;
-  background-color: $bcg-black;
-  @media (max-width: $tablet-width) {
-    font-size: 16px;
-  }
+  background: $bcg-black;
 }

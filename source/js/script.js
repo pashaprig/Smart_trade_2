@@ -27,14 +27,15 @@ class App {
     };
 
     const closeOpen = () => {
-      navToggle.addEventListener("click", function () {
-        if (navMain.classList.contains("main-nav--closed")) {
-          navMain.classList.remove("main-nav--closed");
-          navMain.classList.add("main-nav--opened");
-          navButtonText.classList.add("visually-hidden");
+      navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          navButtonText.textContent = "Close"
         } else {
-          navMain.classList.add("main-nav--closed");
-          navMain.classList.remove("main-nav--opened");
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          navButtonText.textContent = "Меню"
         }
       });
     };
