@@ -2,9 +2,11 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 300px;
-
+  gap: 20px;
+  max-width: 375px;
+  background-color: $basic-white;
+  border-radius: 20px;
+  padding: 38px 15px 19px;
   &--bottom {
     .btn {
       max-width: 242px;
@@ -21,16 +23,34 @@
 input {
   box-sizing: border-box;
   max-height: 45px;
-  padding: 22px 10px;
-  font-size: 15px;
-  font-weight: 400;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
   color: $input-color;
-  border-radius: 4px;
+  border-radius: 100px;
   border: 1px solid $input-border;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  &::placeholder {
+    color: $input-color;
+    text-transform: uppercase;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 1px 3px 4px 0px #0000004a;
+    outline: none;
+  }
 }
 
 .form_message.error.inactive {
   display: none;
+  margin: 15px 0;
+  background-color: #ffd4d4;
+  border: 2px dashed #ce0909;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 350px;
 }
 
 .form_message.error.active {
@@ -38,17 +58,33 @@ input {
   color: #0a0a0a;
 }
 
+.form_message.success {
+  display: block;
+  margin: 15px 0;
+  background-color: #d4ffe0;
+  border: 2px dashed #1f6b34;
+  border-radius: 10px;
+  padding: 20px;
+  color: #0d0c0c;
+}
+
 .error {
-  color: #831B1B;
-  border-color: #831B1B !important;
+  color: #831b1b;
+  border-color: #831b1b !important;
+}
+
+.input-wrapper {
+  position: relative;
 }
 
 label.error {
-  margin-top: -25px;
+  position: absolute;
   text-align: right;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
+  right: 5px;
+  bottom: -15px;
 }
 
 #phone1-error,
@@ -56,4 +92,25 @@ label.error {
   display: flex;
   justify-content: end;
   margin-top: 5px;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  border: 1px solid $input-border !important;
+  border-radius: 25px !important;
+  width: 109px;
+}
+
+.iti__selected-flag {
+  border: 1px solid $input-border;
+}
+
+.iti--separate-dial-code .iti__selected-dial-code {
+  font-size: 20px !important;
+}
+
+#phone1,
+#phone2 {
+  margin-left: 117px !important;
+  padding-left: 10px !important;
+  width: calc(100% - 117px) !important;
 }

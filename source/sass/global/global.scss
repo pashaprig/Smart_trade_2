@@ -55,11 +55,12 @@ button {
   padding: 10px;
   color: $basic-white;
   background-color: $main-color;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 100px;
   border: none;
+  font-family: "Inter", sans-serif;
 
   &:hover {
     background-color: $btn-hover;
