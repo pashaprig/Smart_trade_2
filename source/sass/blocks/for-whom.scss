@@ -1,0 +1,55 @@
+.for-whom {
+  padding-top: 150px;
+}
+
+.for-whom-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
+
+  &__section {
+    height: 230px;
+    &--newbies {
+      background: url("../img/img/for-whom__banner1.jpg") no-repeat center
+        center;
+      background-size: cover;
+      border-bottom: 4px solid $main-color;
+      box-sizing: border-box;
+    }
+
+    &--experienced {
+      background: url("../img/img/for-whom__banner2.jpg") no-repeat center
+        center;
+      background-size: cover;
+    }
+
+    &--passive-investment {
+      background: url("../img/img/for-whom__banner3.jpg") no-repeat center
+        center;
+      background-size: cover;
+    }
+  }
+
+  &__info {
+    padding: 25px 23px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+
+  &__text {
+    padding: 25px 23px 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+}
+
+.for-whom .btn {
+  margin: auto;
+  max-width: 348px;
+}
