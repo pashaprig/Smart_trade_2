@@ -27,15 +27,16 @@
     </picture>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#bank">Результаты студентов</a></li>
-        <li class="main-nav__item"><a href="#calculator">Для кого курс?</a></li>
-        <li class="main-nav__item"><a href="#about-bank">Про курс</a></li>
+        <li class="main-nav__item"><a href="#results">Результаты студентов</a></li>
+        <li class="main-nav__item"><a href="#for-who">Для кого курс?</a></li>
+        <li class="main-nav__item"><a href="#about">Про курс</a></li>
         <li class="main-nav__item"><a href="#license">Кто я?</a></li>
+        <li class="main-nav__item"><a href="#review">Отзывы</a></li>
         <li class="main-nav__item"><a href="#start">Почему курс бесплатный?</a></li>
-        <li class="main-nav__item"><a href="#review">Краткое содержание курса</a></li>
-        <li class="main-nav__item"><a href="#review">Часто задаваемые вопросы</a></li>
+        <li class="main-nav__item"><a href="#info">Краткое содержание курса</a></li>
+        <li class="main-nav__item"><a href="#faq">Часто задаваемые вопросы</a></li>
       </ul>
-      <a class="btn mobile-only" href="#leadform1">Присоединиться к проекту</a>
+      <a class="btn" href="#leadform1">Получить доступ</a>
       <button class="main-nav__toggle" type="button">
         <span class="main-nav__open-btn-text">Mеню</span>
       </button>
@@ -86,15 +87,15 @@
       </div>
     </section>
 
-    <section class="results">
+    <section class="results" id="results">
       Результаты наших учеников
     </section>
 
-    <section class="for-who">
+    <section class="for-who" id="for-who">
       Кому подойдет наше бесплатное обучение?
     </section>
 
-    <section class="about container">
+    <section class="about container" id="about">
       Про нас пишут
     </section>
 
@@ -102,7 +103,7 @@
       знакомиться
     </section>
 
-    <section class="info container">
+    <section class="info container" id="info">
       Бесплатная база
     </section>
 
@@ -166,13 +167,15 @@
       </div>
     </section>
 
-    <section class="faq container">
+    <section class="faq container" id="faq">
       Часто задаваемые вопросы
     </section>
 
     <section class="action container">
-      Бесплатное обучение и практическое сопровождении на реальном торговом счете. Стань профитным трейдером в течении 7 дней
-      <p class="come-on__about">Стань одним из первых инвесторов, приобретающих акции самого крупного банка в Казахстане.</p>
+      Бесплатное обучение и практическое сопровождении на реальном торговом счете. Стань профитным трейдером в течении 7
+      дней
+      <p class="come-on__about">Стань одним из первых инвесторов, приобретающих акции самого крупного банка в
+        Казахстане.</p>
       <form action="#" class="form form--bottom" method="POST" id="leadform2">
         <input type="text" name="name" id="name2" placeholder="Имя Фамилия">
         <input type="email" name="email" id="email2" placeholder="Эл. адрес">
@@ -193,24 +196,35 @@
   </main>
 
   <footer class="page-footer container">
-    <div class="page-footer__wrapper">
+    <div class="page-header__img-wrapper">
+
       <picture>
         <source type="image/webp" srcset="img/img/logo.webp">
-        <img width="182" height="64" class="page-header__img" src="img/img/logo.png" alt="Логотип Halyk Bank">
+        <img width="202" class="page-header__img" src="img/img/logo.png" alt="Логотип Halyk Bank">
       </picture>
-      <p class="page-footer__year">© 2004 - 2023 Halyk Bank</p>
+    </div>
+    <div class="page-footer__wrapper page-footer__wrapper--ml30">
+      <p class="page-footer__year">Сopyright – all rights reserved&nbsp;2024</p>
       <a href="#leadform1" class="page-footer__polycy">Политика конфиденциальности</a>
-      <a href="#leadform1" class="page-footer__polycy">Правила использования</a>
+      <a href="#leadform1" class="page-footer__polycy">Пользовательское соглашение</a>
     </div>
     <nav class="page-footer__wrapper">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#bank">Преимущества</a></li>
-        <li class="main-nav__item"><a href="#calculator">Калькулятор</a></li>
-        <li class="main-nav__item"><a href="#about-bank">Halyk Bank</a></li>
-        <li class="main-nav__item"><a href="#license">Лицензия</a></li>
-        <li class="main-nav__item"><a href="#start">Инвестирование</a></li>
-        <li class="main-nav__item"><a href="#review">Отзывы</a></li>
+      <ul class="main-nav__list main-nav__list--bottom">
+        <div class="">
+          <li class="main-nav__item"><a href="#results">Результаты студентов</a></li>
+          <li class="main-nav__item"><a href="#for-who">Для кого курс?</a></li>
+          <li class="main-nav__item"><a href="#about">Про курс</a></li>
+          <li class="main-nav__item"><a href="#license">Кто я?</a></li>
+        </div>
+        <div class="">
+
+          <li class="main-nav__item"><a href="#review">Отзывы</a></li>
+          <li class="main-nav__item"><a href="#start">Почему курс бесплатный?</a></li>
+          <li class="main-nav__item"><a href="#info">Краткое содержание курса</a></li>
+          <li class="main-nav__item"><a href="#faq">Часто задаваемые вопросы</a></li>
+        </div>
       </ul>
+      <a class="btn" href="#leadform1">Зарегистрироваться на обучение</a>
     </nav>
   </footer>
   <script src="js/jquery.min.js"></script>
@@ -229,8 +243,8 @@
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
       initialCountry: "auto",
       excludeCountries: ["UA"],
-      geoIpLookup: function(success, failure) {
-        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      geoIpLookup: function (success, failure) {
+        $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
           $("#country1").val(resp.country);
           $("#country2").val(resp.country);
           var countryCode =
@@ -248,7 +262,7 @@
 
     $.validator.addMethod(
       "validNumber",
-      function(value, element, params) {
+      function (value, element, params) {
         var obj = params.object;
         if (obj.isValidNumber()) {
           var num = obj.getNumber().replace("+", "");
@@ -277,7 +291,7 @@
     // Form validation
     $.validator.addMethod(
       "alphanumeric",
-      function(value, element) {
+      function (value, element) {
         return this.optional(element) || /^[a-zA-Zа-яА-ЯЁё\s]+$/.test(value.replace(/ +/g, ' ').trim()); //RU
       },
       "ⓘ Имя может содержать только буквы!"
@@ -285,14 +299,14 @@
 
     $.validator.addMethod(
       "nameSurname",
-      function(value, element) {
+      function (value, element) {
         return this.optional(element) || /^[a-zA-Zа-яА-ЯЁё]+(\s+[a-zA-Zа-яА-ЯЁё]+)$/.test(value.replace(/ +/g, ' ').trim()); //RU
       },
       "ⓘ Укажите имя и фамилию через пробел"
     );
 
     // Email validation
-    $.validator.addMethod("emailValidation", function(value, element) {
+    $.validator.addMethod("emailValidation", function (value, element) {
       return this.optional(element) || /^[a-zA-Z0-9_.!#$%&\'*+\-\/=?^_`{|}~]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,61}$/g.test(value);
     }, "ⓘ Введите правильный адрес");
 
@@ -305,8 +319,8 @@
     emailForm2.addEventListener("change", removeDotsHyphens);
 
     //Trim whitespace on email input
-    $(function() {
-      $('input[type=email]').on('keypress', function(e) {
+    $(function () {
+      $('input[type=email]').on('keypress', function (e) {
         if (e.which == 32)
           return false;
       });
@@ -342,7 +356,7 @@
           required: "ⓘ Это поле обязательное"
         },
       },
-      submitHandler: function(form, event) {
+      submitHandler: function (form, event) {
         sendAjaxForm(form);
         return false;
 
@@ -356,12 +370,12 @@
         dataType: "json",
         data: $(form).serialize(),
         timeout: 30000,
-        beforeSend: function() {
+        beforeSend: function () {
           $(form).find(".submit_btn ").html('Отправление');
           $(form).find(".submit_btn").prop('disabled', true);
         },
 
-      }).done(function(response) {
+      }).done(function (response) {
         let result = response;
         let url = result.url;
         if (response.status === 'ok') {
@@ -370,7 +384,7 @@
           ttq.page();
           $(form).find(".submit_btn").html('Данные отправлены успешно.');
           if (response.url) {
-            setTimeout(function() {
+            setTimeout(function () {
               window.location.href = response.url;
             }, 1000);
           } else {
@@ -385,7 +399,7 @@
         }
 
 
-      }).fail(function(response) {
+      }).fail(function (response) {
         $(form).find('.error.form_message').addClass('active');
         $(form).find('.error.form_message').html('Во время отправки данных произошла ошибка!');
         $(form).find(".submit_btn ").html('Начать зарабатывать');
@@ -393,8 +407,8 @@
       });
     }
 
-    $(window).on("load", function() {
-      setTimeout(function() {
+    $(window).on("load", function () {
+      setTimeout(function () {
         const selectedCountryIso1 = phoneInput1.getSelectedCountryData().iso2;
         if (selectedCountryIso1 === 'at' || selectedCountryIso1 === 'de') {
           var mask1 = jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9) + "?9?9";
@@ -402,13 +416,13 @@
           var mask1 = jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9);
         }
 
-        $(document).ready(function() {
+        $(document).ready(function () {
           jQuery("#phone1").mask(mask1, {
             autoclear: false
           });
         });
 
-        jQuery("#phone1").on("countrychange", function(e, countryData) {
+        jQuery("#phone1").on("countrychange", function (e, countryData) {
           jQuery("#phone1").val("");
           const selectedCountryIso1 = phoneInput1.getSelectedCountryData().iso2;
           if (selectedCountryIso1 === 'at' || selectedCountryIso1 === 'de') {
@@ -430,8 +444,8 @@
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
       initialCountry: "auto",
       excludeCountries: ["UA"],
-      geoIpLookup: function(success, failure) {
-        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      geoIpLookup: function (success, failure) {
+        $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
           var countryCode =
             resp && checkCountry(resp.country) ? resp.country : "DE";
           success(countryCode);
@@ -469,15 +483,15 @@
           required: "ⓘ Это поле обязательное",
         },
       },
-      submitHandler: function(form, event) {
+      submitHandler: function (form, event) {
         sendAjaxForm(form);
         return false;
 
       },
     });
 
-    $(window).on("load", function() {
-      setTimeout(function() {
+    $(window).on("load", function () {
+      setTimeout(function () {
         const selectedCountryIso2 = phoneInput2.getSelectedCountryData().iso2;
         if (selectedCountryIso2 === 'at' || selectedCountryIso2 === 'de') {
           var mask1 = jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9) + "?9?9";
@@ -485,13 +499,13 @@
           var mask1 = jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9);
         }
 
-        $(document).ready(function() {
+        $(document).ready(function () {
           jQuery("#phone2").mask(mask1, {
             autoclear: false
           });
         });
 
-        jQuery("#phone2").on("countrychange", function(e, countryData) {
+        jQuery("#phone2").on("countrychange", function (e, countryData) {
           jQuery("#phone2").val("");
           const selectedCountryIso2 = phoneInput2.getSelectedCountryData().iso2;
           if (selectedCountryIso2 === 'at' || selectedCountryIso2 === 'de') {

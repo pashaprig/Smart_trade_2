@@ -6,8 +6,4 @@
   font-size: 24px;
   color: $basic-white;
   background: $bcg-black;
-
-  @media (max-width: $tablet-width) {
-    font-size: 16px;
-  }
 }
