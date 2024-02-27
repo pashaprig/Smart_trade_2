@@ -19,6 +19,7 @@
   }
 
   & .main-nav__item > a {
+    font-size: 20px;
     color: $basic-white;
   }
 
@@ -43,7 +44,11 @@
   align-items: center;
   width: 100%;
   min-height: 28px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 
   a {
     &:hover {
@@ -59,6 +64,10 @@
 .main-nav__list {
   margin-top: 25px;
   display: block;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 
   &--bottom {
     display: flex;
@@ -78,8 +87,8 @@
 .main-nav__toggle {
   overflow: hidden;
   position: absolute;
-  top: 20px;
-  right: 16px;
+  top: 30px;
+  right: 66px;
   z-index: 2;
   width: 45px;
   height: 45px;
@@ -87,6 +96,11 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    top: 20px;
+    right: 25px;
+  }
 }
 
 // Бургер на css
@@ -135,6 +149,7 @@
 //Крестик на css
 .main-nav--opened .main-nav__toggle {
   width: fit-content;
+  transition: all ease-in-out 500ms;
 
   .main-nav__open-btn-text {
     font-family: "Inter", "Arial", sans-serif;
