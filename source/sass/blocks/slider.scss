@@ -5,7 +5,19 @@
 }
 
 .slider__item {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
   min-width: 0;
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 /* Ограничивающая оболочка */
@@ -16,6 +28,8 @@
 /* Лента слайдов */
 .slick-track {
   display: flex;
+  justify-content: center;
+  padding-top: 70px;
 }
 
 /* Точки (булиты) */

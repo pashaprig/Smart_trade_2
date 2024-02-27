@@ -1,556 +1,397 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Smart Trade</title>
-    <meta
-      name="Бесплатное обучение и практическое сопровождении на реальном торговом счете. Стань профитным трейдером в течении 7 дней"
-      content="Title"
-    />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <!-- https://realfavicongenerator.net/ -->
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
 
-  <body class="page-body">
-    <header class="page-header container">
-      <picture>
-        <source type="image/webp" srcset="img/img/logo.webp" />
-        <img
-          width="202"
-          class="page-header__img"
-          src="img/img/logo.png"
-          alt="Smart Trade"
-        />
-      </picture>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#results">Результаты студентов</a>
-          </li>
-          <li class="main-nav__item"><a href="#for-whom">Для кого курс?</a></li>
-          <li class="main-nav__item"><a href="#about">Про курс</a></li>
-          <li class="main-nav__item"><a href="#license">Кто я?</a></li>
-          <li class="main-nav__item"><a href="#review">Отзывы</a></li>
-          <li class="main-nav__item">
-            <a href="#start">Почему курс бесплатный?</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#info">Краткое содержание курса</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#faq">Часто задаваемые вопросы</a>
-          </li>
-        </ul>
-        <a class="btn" href="#leadform1">Получить доступ</a>
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__open-btn-text">Mеню</span>
-        </button>
-      </nav>
-    </header>
-    <main>
-      <section class="promo">
-        <h1 class="promo__heading">
-          Бесплатное обучение и практическое сопровождении на реальном торговом
-          счете.<br />
-          <span>Стань профитным трейдером в течении 7 дней</span>
-        </h1>
-        <p class="promo__about">
-          Вы получите базу знаний от команды Smart Trade и в сопровождении
-          специалиста компании заработаете свои первые деньги на финансовых
-          рынках!
-        </p>
-        <div class="promo__content container">
-          <div class="promo__wrapper">
-            <div class="promo__video-bcg">
-              <div class="promo__video">
-                <button type="button" id="button-play">
-                  <svg width="38" height="44">
-                    <use xlink:href="img/sprite.svg#play"></use>
-                  </svg>
-                </button>
-                <div class="promo__video-container">
-                  <iframe
-                    src="https://player.vimeo.com/video/833805934?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&loop=1&"
-                    frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                    style=""
-                    title="Yandex_land"
-                  >
-                  </iframe>
-                </div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
-              </div>
-            </div>
-          </div>
-          <div class="promo__wrapper">
-            <form action="#" class="form" method="POST" id="leadform1">
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="firstName"
-                  id="firstName"
-                  placeholder="Имя"
-                  autofocus
-                />
-              </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Smart Trade</title>
+  <meta
+    name="Бесплатное обучение и практическое сопровождении на реальном торговом счете. Стань профитным трейдером в течении 7 дней"
+    content="Title" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <!-- https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
 
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="lastName"
-                  id="lastName"
-                  placeholder="Фамилия"
-                />
-              </div>
-
-              <div class="input-wrapper">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Эл. адрес"
-                />
-              </div>
-
-              <div class="input-wrapper">
-                <input type="tel" name="phone1" placeholder="" id="phone1" />
-                <input
-                  id="realPhone1"
-                  class="hidden-phone"
-                  type="hidden"
-                  name="phone"
-                  value=""
-                />
-                <input type="hidden" name="currency" value="usd" />
-                <input id="country1" type="hidden" name="country" value="ru" />
-              </div>
-
-              <button class="btn submit_btn" type="submit">
-                <span>Зарегистрироваться на обучение</span>
+<body class="page-body">
+  <header class="page-header container">
+    <picture>
+      <source type="image/webp" srcset="img/img/logo.webp" />
+      <img width="202" class="page-header__img" src="img/img/logo.png" alt="Smart Trade" />
+    </picture>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#results">Результаты студентов</a>
+        </li>
+        <li class="main-nav__item"><a href="#for-whom">Для кого курс?</a></li>
+        <li class="main-nav__item"><a href="#about">Про курс</a></li>
+        <li class="main-nav__item"><a href="#license">Кто я?</a></li>
+        <li class="main-nav__item"><a href="#review">Отзывы</a></li>
+        <li class="main-nav__item">
+          <a href="#start">Почему курс бесплатный?</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#info">Краткое содержание курса</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#faq">Часто задаваемые вопросы</a>
+        </li>
+      </ul>
+      <a class="btn" href="#leadform1">Получить доступ</a>
+      <button class="main-nav__toggle" type="button">
+        <span class="main-nav__open-btn-text">Mеню</span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="promo">
+      <h1 class="promo__heading">
+        Бесплатное обучение и практическое сопровождении на реальном торговом
+        счете.<br />
+        <span>Стань профитным трейдером в течении 7 дней</span>
+      </h1>
+      <p class="promo__about">
+        Вы получите базу знаний от команды Smart Trade и в сопровождении
+        специалиста компании заработаете свои первые деньги на финансовых
+        рынках!
+      </p>
+      <div class="promo__content container">
+        <div class="promo__wrapper">
+          <div class="promo__video-bcg">
+            <div class="promo__video">
+              <button type="button" id="button-play">
+                <svg width="38" height="44">
+                  <use xlink:href="img/sprite.svg#play"></use>
+                </svg>
               </button>
-              <div class="checkbox-group">
-                <input
-                  type="checkbox"
-                  id="agreement1"
-                  name="agreement"
-                  value="true"
-                  checked=""
-                  class="checkbox-group__input"
-                />
-                <label
-                  for="agreement1"
-                  class="checkbox-group__label checkbox-group__label--disclaimer"
-                >
-                  Принимаю пользовательское соглашение
-                </label>
+              <div class="promo__video-container">
+                <iframe
+                  src="https://player.vimeo.com/video/833805934?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&loop=1&"
+                  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Yandex_land">
+                </iframe>
               </div>
-              <div class="checkbox-group">
-                <input
-                  type="checkbox"
-                  id="policy1"
-                  name="policy"
-                  value="true"
-                  checked=""
-                  class="checkbox-group__input"
-                />
-                <label
-                  for="policy1"
-                  class="checkbox-group__label checkbox-group__label--disclaimer"
-                >
-                  Согласен(а) с политикой конфиденциальности
-                </label>
-              </div>
-
-              <div class="form_message error inactive"></div>
-            </form>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
           </div>
         </div>
-        <div class="promo-banner container">
-          <div>
-            <div
-              class="promo-banner__section promo-banner__section--team"
-            ></div>
-            <p class="promo-banner__info">+20 000 участников со всего мира</p>
+        <div class="promo__wrapper">
+          <form action="#" class="form" method="POST" id="leadform1">
+            <div class="input-wrapper">
+              <input type="text" name="firstName" id="firstName" placeholder="Имя" autofocus />
+            </div>
+
+            <div class="input-wrapper">
+              <input type="text" name="lastName" id="lastName" placeholder="Фамилия" />
+            </div>
+
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" placeholder="Эл. адрес" />
+            </div>
+
+            <div class="input-wrapper">
+              <input type="tel" name="phone1" placeholder="" id="phone1" />
+              <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+              <input type="hidden" name="currency" value="usd" />
+              <input id="country1" type="hidden" name="country" value="ru" />
+            </div>
+
+            <button class="btn submit_btn" type="submit">
+              <span>Зарегистрироваться на обучение</span>
+            </button>
+            <div class="checkbox-group">
+              <input type="checkbox" id="agreement1" name="agreement" value="true" checked=""
+                class="checkbox-group__input" />
+              <label for="agreement1" class="checkbox-group__label checkbox-group__label--disclaimer">
+                Принимаю пользовательское соглашение
+              </label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="policy1" name="policy" value="true" checked="" class="checkbox-group__input" />
+              <label for="policy1" class="checkbox-group__label checkbox-group__label--disclaimer">
+                Согласен(а) с политикой конфиденциальности
+              </label>
+            </div>
+
+            <div class="form_message error inactive"></div>
+          </form>
+        </div>
+      </div>
+      <div class="promo-banner container">
+        <div>
+          <div class="promo-banner__section promo-banner__section--team"></div>
+          <p class="promo-banner__info">+20 000 участников со всего мира</p>
+        </div>
+        <div>
+          <div class="promo-banner__section promo-banner__section--free"></div>
+          <p class="promo-banner__info">
+            Всё в Smart Trade на 100% бесплатно
+          </p>
+        </div>
+        <div>
+          <div class="promo-banner__section promo-banner__section--success"></div>
+          <p class="promo-banner__info">
+            Станьте успешным на финансовом рынке
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="results" id="results">
+      <h2 class="results__heading heading">Результаты наших&nbsp;учеников</h2>
+      <div class="results__list slider">
+        <div class="slider__item">
+          <div class="results__item ">
+            <div class="results__item-bcg">
+              <picture>
+                <source type="image/webp" srcset="img/avatars/alex.webp">
+                <img width="130" height="130" class="results__img" src="img/avatars/alex.jpg" alt="Александр Дублин">
+              </picture>
+              <h3 class="results__name"><span>Александр, 30</span> Дублин</h3>
+              <table class="results__table">
+                <tr>
+                  <td>
+                    <p class="results__info">В проекте:</p>
+                    <p class="results__info results__info--bold"><strong>4 недели</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">В день тратит:</p>
+                    <p class="results__info results__info--bold"><strong>2-4 часа в день</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="results__info">Стартовый депозит:</p>
+                    <p class="results__info results__info--bold"><strong>500$</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">Текущий<br>баланс:</p>
+                    <p class="results__info results__info--bold"><strong>2.500$</strong></p>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
-          <div>
-            <div
-              class="promo-banner__section promo-banner__section--free"
-            ></div>
-            <p class="promo-banner__info">
-              Всё в Smart Trade на 100% бесплатно
-            </p>
-          </div>
-          <div>
-            <div
-              class="promo-banner__section promo-banner__section--success"
-            ></div>
-            <p class="promo-banner__info">
-              Станьте успешным на финансовом рынке
-            </p>
+          <div class="results__item">
+            <div class="results__item-bcg">
+              <picture>
+                <source type="image/webp" srcset="img/avatars/vika.webp">
+                <img width="130" height="130" class="results__img" src="img/avatars/vika.jpg" alt="Виктория">
+              </picture>
+              <h3 class="results__name"><span>Виктория, 26</span> Мадрид</h3>
+              <table class="results__table">
+                <tr>
+                  <td>
+                    <p class="results__info">В проекте:</p>
+                    <p class="results__info results__info--bold"><strong>12 недель</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">В день тратит:</p>
+                    <p class="results__info results__info--bold"><strong>2-4 часа в день</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="results__info">Стартовый депозит:</p>
+                    <p class="results__info results__info--bold"><strong>800$</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">Текущий<br>баланс:</p>
+                    <p class="results__info results__info--bold"><strong>6.700$</strong></p>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="results container" id="results">
-        <h2 class="results__heading heading">Результаты наших учеников</h2>
-        <ul class="results__list">
-          <li class="results__item">
+        <div class="slider__item">
+          <div class="results__item">
             <div class="results__item-bcg">
               <picture>
-                <source type="image/webp" srcset="img/avatars/alex.webp" />
-                <img
-                  width="130"
-                  height="130"
-                  class="results__img"
-                  src="img/avatars/alex.jpg"
-                  alt="Александр Дублин"
-                />
+                <source type="image/webp" srcset="img/avatars/mari.webp">
+                <img width="130" height="130" class="results__img" src="img/avatars/mari.jpg" alt="Мария">
               </picture>
-              <h3 class="results__name"><span>Александр, 30</span> Дублин</h3>
+              <h3 class="results__name"><span>Мария, 34</span> Варшава</h3>
               <table class="results__table">
                 <tr>
                   <td>
                     <p class="results__info">В проекте:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>4 недели</strong>
-                    </p>
+                    <p class="results__info results__info--bold"><strong>7 недель</strong></p>
                   </td>
                   <td>
                     <p class="results__info">В день тратит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2-4 часа в день</strong>
-                    </p>
+                    <p class="results__info results__info--bold"><strong>5 часов в день</strong></p>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <p class="results__info">Стартовый депозит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>500$</strong>
-                    </p>
+                    <p class="results__info results__info--bold"><strong>300$</strong></p>
                   </td>
                   <td>
-                    <p class="results__info">Текущий<br />баланс:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2.500$</strong>
-                    </p>
+                    <p class="results__info">Текущий<br>баланс:</p>
+                    <p class="results__info results__info--bold"><strong>3.200$</strong></p>
                   </td>
                 </tr>
               </table>
             </div>
-          </li>
-
-          <li class="results__item">
-            <div class="results__item-bcg">
-              <picture>
-                <source type="image/webp" srcset="img/avatars/alex.webp" />
-                <img
-                  width="130"
-                  height="130"
-                  class="results__img"
-                  src="img/avatars/alex.jpg"
-                  alt="Александр Дублин"
-                />
-              </picture>
-              <h3 class="results__name"><span>Александр, 30</span> Дублин</h3>
-              <table class="results__table">
-                <tr>
-                  <td>
-                    <p class="results__info">В проекте:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>4 недели</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">В день тратит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2-4 часа в день</strong>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="results__info">Стартовый депозит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>500$</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">Текущий<br />баланс:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2.500$</strong>
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </li>
-
-          <li class="results__item">
-            <div class="results__item-bcg">
-              <picture>
-                <source type="image/webp" srcset="img/avatars/alex.webp" />
-                <img
-                  width="130"
-                  height="130"
-                  class="results__img"
-                  src="img/avatars/alex.jpg"
-                  alt="Александр Дублин"
-                />
-              </picture>
-              <h3 class="results__name"><span>Александр, 30</span> Дублин</h3>
-              <table class="results__table">
-                <tr>
-                  <td>
-                    <p class="results__info">В проекте:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>4 недели</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">В день тратит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2-4 часа в день</strong>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="results__info">Стартовый депозит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>500$</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">Текущий<br />баланс:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2.500$</strong>
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </li>
-
-          <li class="results__item">
-            <div class="results__item-bcg">
-              <picture>
-                <source type="image/webp" srcset="img/avatars/alex.webp" />
-                <img
-                  width="130"
-                  height="130"
-                  class="results__img"
-                  src="img/avatars/alex.jpg"
-                  alt="Александр Дублин"
-                />
-              </picture>
-              <h3 class="results__name"><span>Александр, 30</span> Дублин</h3>
-              <table class="results__table">
-                <tr>
-                  <td>
-                    <p class="results__info">В проекте:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>4 недели</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">В день тратит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2-4 часа в день</strong>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="results__info">Стартовый депозит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>500$</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">Текущий<br />баланс:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2.500$</strong>
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </li>
-
-          <li class="results__item">
-            <div class="results__item-bcg">
-              <picture>
-                <source type="image/webp" srcset="img/avatars/alex.webp" />
-                <img
-                  width="130"
-                  height="130"
-                  class="results__img"
-                  src="img/avatars/alex.jpg"
-                  alt="Александр Дублин"
-                />
-              </picture>
-              <h3 class="results__name"><span>Александр, 30</span> Дублин</h3>
-              <table class="results__table">
-                <tr>
-                  <td>
-                    <p class="results__info">В проекте:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>4 недели</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">В день тратит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2-4 часа в день</strong>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="results__info">Стартовый депозит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>500$</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">Текущий<br />баланс:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2.500$</strong>
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </li>
-
-          <li class="results__item">
-            <div class="results__item-bcg">
-              <picture>
-                <source type="image/webp" srcset="img/avatars/alex.webp" />
-                <img
-                  width="130"
-                  height="130"
-                  class="results__img"
-                  src="img/avatars/alex.jpg"
-                  alt="Александр Дублин"
-                />
-              </picture>
-              <h3 class="results__name"><span>Александр, 30</span> Дублин</h3>
-              <table class="results__table">
-                <tr>
-                  <td>
-                    <p class="results__info">В проекте:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>4 недели</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">В день тратит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2-4 часа в день</strong>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="results__info">Стартовый депозит:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>500$</strong>
-                    </p>
-                  </td>
-                  <td>
-                    <p class="results__info">Текущий<br />баланс:</p>
-                    <p class="results__info results__info--bold">
-                      <strong>2.500$</strong>
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section class="for-whom" id="for-whom">
-        <h2 class="section-heading">Кому подойдет наше бесплатное обучение?</h2>
-        <div class="for-whom-banner container">
-          <div>
-            <div
-              class="for-whom-banner__section for-whom-banner__section--newbies"
-            ></div>
-            <p class="for-whom-banner__info">
-              Новичкам, людям что только начинают свой путь в инвестировании
-            </p>
-            <p class="for-whom-banner__text">
-              Вы определились что хотите связать жизнь с трейдингом, но не
-              знаете с чего начать? На нашем курсе вы обретете знания с самого
-              нуля, разберетесь в терминах трейдинга, инструментах торговой
-              платформы и т.п. В итоге Вы с самого нуля выберет свою стратегию
-              трейдинга, с которой будет делать положительный результат
-            </p>
           </div>
-          <div>
-            <div
-              class="for-whom-banner__section for-whom-banner__section--experienced"
-            ></div>
-            <p class="for-whom-banner__info">
-              Опытным, которые хотят повысить уровень своих знаний и начать
-              стабильно зарабатывать
-            </p>
-            <p class="for-whom-banner__text">
-              Мы даем не только базовые знания, но и помогаем определить
-              стратегии манименеджета, который подходит для Вашего стиля
-              торговли. Если Вы понимаете, что трейдинг все еще "американские
-              горки" и тут нет стабильности - мы поможем развеять этот миф.
-            </p>
-          </div>
-          <div>
-            <div
-              class="for-whom-banner__section for-whom-banner__section--passive-investment"
-            ></div>
-            <p class="for-whom-banner__info">
-              Людям, которые ищут себя и рассматривают трейдинг как пассивные
-              инвестиции или обретение свободы
-            </p>
-            <p class="for-whom-banner__text">
-              На нашем обучении Вы сможете понять подходят ли Вам финансовые
-              рынки и какой тип трейдинга. В зависимости от Вашего запроса это
-              может быть скальпинг, дейтрединг, среднесрочные инвестиции или
-              долгосрочные. Все зависит от Вашего желания и возможностей, а мы
-              поможем подобрать наилучший для вас вариант и обучить по
-              намеченному пути.
-            </p>
+          <div class="results__item">
+            <div class="results__item-bcg">
+              <picture>
+                <source type="image/webp" srcset="img/avatars/piter.webp">
+                <img width="130" height="130" class="results__img" src="img/avatars/piter.jpg" alt="Петр">
+              </picture>
+              <h3 class="results__name"><span>Петр, 29</span> Люксембург</h3>
+              <table class="results__table">
+                <tr>
+                  <td>
+                    <p class="results__info">В проекте:</p>
+                    <p class="results__info results__info--bold"><strong>2 недели</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">В день тратит:</p>
+                    <p class="results__info results__info--bold"><strong>4-5 часов в день</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="results__info">Стартовый депозит:</p>
+                    <p class="results__info results__info--bold"><strong>600$</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">Текущий<br>баланс:</p>
+                    <p class="results__info results__info--bold"><strong>2.100$</strong></p>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-        <a class="btn" href="#leadform1">Зарегистрироваться на обучение</a>
-      </section>
+
+        <div class="slider__item">
+          <div class="results__item">
+            <div class="results__item-bcg">
+              <picture>
+                <source type="image/webp" srcset="img/avatars/evhen.webp">
+                <img width="130" height="130" class="results__img" src="img/avatars/evhen.jpg" alt="Евгений">
+              </picture>
+              <h3 class="results__name"><span>Евгений, 22</span> Лион</h3>
+              <table class="results__table">
+                <tr>
+                  <td>
+                    <p class="results__info">В проекте:</p>
+                    <p class="results__info results__info--bold"><strong>3 недели</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">В день тратит:</p>
+                    <p class="results__info results__info--bold"><strong>2 часа в день</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="results__info">Стартовый депозит:</p>
+                    <p class="results__info results__info--bold"><strong>700$</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">Текущий<br>баланс:</p>
+                    <p class="results__info results__info--bold"><strong>1.250$</strong></p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="results__item">
+            <div class="results__item-bcg">
+              <picture>
+                <source type="image/webp" srcset="img/avatars/julia.webp">
+                <img width="130" height="130" class="results__img" src="img/avatars/julia.jpg" alt="Юлия">
+              </picture>
+              <h3 class="results__name"><span>Юлия, 21</span> Прага</h3>
+              <table class="results__table">
+                <tr>
+                  <td>
+                    <p class="results__info">В проекте:</p>
+                    <p class="results__info results__info--bold"><strong>10 недель</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">В день тратит:</p>
+                    <p class="results__info results__info--bold"><strong>6 часов в день</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="results__info">Стартовый депозит:</p>
+                    <p class="results__info results__info--bold"><strong>1000$</strong></p>
+                  </td>
+                  <td>
+                    <p class="results__info">Текущий<br>баланс:</p>
+                    <p class="results__info results__info--bold"><strong>4.650$</strong></p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="for-whom" id="for-whom">
+      <h2 class="section-heading">Кому подойдет наше бесплатное обучение?</h2>
+      <div class="for-whom-banner container">
+        <div>
+          <div class="for-whom-banner__section for-whom-banner__section--newbies"></div>
+          <p class="for-whom-banner__info">
+            Новичкам, людям что только начинают свой путь в инвестировании
+          </p>
+          <p class="for-whom-banner__text">
+            Вы определились что хотите связать жизнь с трейдингом, но не
+            знаете с чего начать? На нашем курсе вы обретете знания с самого
+            нуля, разберетесь в терминах трейдинга, инструментах торговой
+            платформы и т.п. В итоге Вы с самого нуля выберет свою стратегию
+            трейдинга, с которой будет делать положительный результат
+          </p>
+        </div>
+        <div>
+          <div class="for-whom-banner__section for-whom-banner__section--experienced"></div>
+          <p class="for-whom-banner__info">
+            Опытным, которые хотят повысить уровень своих знаний и начать
+            стабильно зарабатывать
+          </p>
+          <p class="for-whom-banner__text">
+            Мы даем не только базовые знания, но и помогаем определить
+            стратегии манименеджета, который подходит для Вашего стиля
+            торговли. Если Вы понимаете, что трейдинг все еще "американские
+            горки" и тут нет стабильности - мы поможем развеять этот миф.
+          </p>
+        </div>
+        <div>
+          <div class="for-whom-banner__section for-whom-banner__section--passive-investment"></div>
+          <p class="for-whom-banner__info">
+            Людям, которые ищут себя и рассматривают трейдинг как пассивные
+            инвестиции или обретение свободы
+          </p>
+          <p class="for-whom-banner__text">
+            На нашем обучении Вы сможете понять подходят ли Вам финансовые
+            рынки и какой тип трейдинга. В зависимости от Вашего запроса это
+            может быть скальпинг, дейтрединг, среднесрочные инвестиции или
+            долгосрочные. Все зависит от Вашего желания и возможностей, а мы
+            поможем подобрать наилучший для вас вариант и обучить по
+            намеченному пути.
+          </p>
+        </div>
+      </div>
+      <a class="btn" href="#leadform1">Зарегистрироваться на обучение</a>
+    </section>
 
       <section class="about container" id="about">Про нас пишут</section>
 
@@ -591,454 +432,340 @@
 
       <section class="why container">Почему</section>
 
-      <section class="review container" id="review">
-        <h2 class="review__heading heading">Отзывы наших клиентов</h2>
-        <p class="review__about">
-          Halyk банк задуман как финансовый актив и нативный расчетный
-          инструмент в блокчейн сети Сбербанка - крупнейшего банка Казахстана.
-          По итогам 2019 года у «Halyk Bank» 96,2 млн активных частных клиентов
-          и 2,6 млн активных корпоративных клиентов, именно в этом году было
-          принято запустить свою криптовалюту.
-        </p>
-        <div class="slider">
-          <div class="review__card slider__item">
-            <div class="review__avatae-wrapper">
-              <picture>
-                <source type="image/webp" srcset="img/avatars/latif.webp" />
-                <img
-                  width="60"
-                  height="60"
-                  class="review__img"
-                  src="img/avatars/latif.jpg"
-                  alt="Пірәліұлы Латиф"
-                />
-              </picture>
-              <div class="review__name-wrapper">
-                <cite>Пірәліұлы Латиф</cite>
-                <span class="review__nik">@Butterbean</span>
-              </div>
-              <blockquote class="review__blockquote">
-                Проект помог мне выбраться из финансовой ямы во время карантина
-                и действительно изменил мою жизнь!
-              </blockquote>
-              <p class="review__time">23:02| Май 23,2023</p>
-            </div>
+    <section class="review container" id="review">
+      <h2 class="review__heading heading">Отзывы наших клиентов</h2>
+      <p class="review__about">Halyk банк задуман как финансовый актив и нативный расчетный инструмент в блокчейн сети
+        Сбербанка - крупнейшего банка Казахстана. По итогам 2019 года у «Halyk Bank» 96,2 млн активных частных клиентов
+        и 2,6 млн активных корпоративных клиентов, именно в этом году было принято запустить свою криптовалюту.</p>
+    </section>
 
-            <div class="review__card slider__item">
-              <div class="review__avatae-wrapper">
-                <picture>
-                  <source
-                    type="image/webp"
-                    srcset="img/avatars/ismetuly.webp"
-                  />
-                  <img
-                    width="60"
-                    height="60"
-                    class="review__img"
-                    src="img/avatars/ismetuly.jpg"
-                    alt="Ісметұлы Латиф"
-                  />
-                </picture>
-                <div class="review__name-wrapper">
-                  <cite>Ісметұлы Латиф</cite>
-                  <span class="review__nik">@Gamethe</span>
-                </div>
-              </div>
-              <blockquote class="review__blockquote">
-                Решил попробовать себя в роли инвестора на проекте. Не имея
-                опыта, я сразу влился в процесс и начал зарабатывать 500 евро
-              </blockquote>
-              <p class="review__time">13:33| Февраль 12,2023</p>
-            </div>
+    <section class="faq container" id="faq">Часто задаваемые вопросы</section>
 
-            <div class="review__card slider__item">
-              <div class="review__avatae-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="img/avatars/damen.webp" />
-                  <img
-                    width="60"
-                    height="60"
-                    class="review__img"
-                    src="img/avatars/damen.jpg"
-                    alt="Ошақбайұлы Дәмен"
-                  />
-                </picture>
-                <div class="review__name-wrapper">
-                  <cite>Ошақбайұлы Дәмен</cite>
-                  <span class="review__nik">@Ckyliу453</span>
-                </div>
-              </div>
-              <blockquote class="review__blockquote">
-                Проект — реальная возможность обеспечить себе достойную
-                жизнь.Очень удобно и легко — всем советую.
-              </blockquote>
-              <p class="review__time">18:37| Март 1,2023</p>
-            </div>
-          </div>
+    <section class="promo container">
+      <h2 class="promo__heading">
+        Бесплатное обучение и практическое сопровождении на реальном торговом
+        счете.<br />
+        <span>Стань профитным трейдером в течении 7 дней</span>
+      </h2>
+      <p class="promo__about">
+        Вы получите базу знаний от команды Smart Trade и в сопровождении
+        специалиста компании заработаете свои первые деньги на финансовых
+        рынках!
+      </p>
+      <form action="#" class="form form--bottom lead-form2" method="POST" id="leadform2">
+        <div class="input-wrapper">
+          <input type="text" name="firstName" id="firstName2" placeholder="Имя" />
         </div>
-      </section>
+        <div class="input-wrapper">
+          <input type="text" name="lastName" id="lastName2" placeholder="Фамилия" />
+        </div>
+        <div class="input-wrapper">
+          <input type="email" name="email" id="email2" placeholder="Эл. адрес" />
+        </div>
+        <div class="input-wrapper">
+          <input type="tel" name="phone2" placeholder="" id="phone2" />
+          <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="" />
+          <input type="hidden" name="currency" value="usd" />
+          <input id="country2" type="hidden" name="country" value="ru" />
+        </div>
+        <button class="btn submit_btn" type="submit">
+          <span>Зарегистрироваться на обучение</span>
+        </button>
+        <div class="checkbox-group">
+          <input type="checkbox" id="agreement2" name="agreement" value="true" checked=""
+            class="checkbox-group__input" />
+          <label for="agreement2" class="checkbox-group__label checkbox-group__label--disclaimer">
+            Принимаю пользовательское соглашение
+          </label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="policy2" name="policy" value="true" checked="" class="checkbox-group__input" />
+          <label for="policy2" class="checkbox-group__label checkbox-group__label--disclaimer">
+            Согласен(а) с политикой конфиденциальности
+          </label>
+        </div>
+        <div class="form_message error inactive"></div>
+      </form>
+    </section>
+  </main>
 
-      <section class="faq container" id="faq">Часто задаваемые вопросы</section>
+  <footer class="page-footer container">
+    <div class="page-header__img-wrapper">
+      <picture>
+        <source type="image/webp" srcset="img/img/logo.webp" />
+        <img width="202" class="page-header__img" src="img/img/logo.png" alt="Логотип Halyk Bank" />
+      </picture>
+    </div>
+    <div class="page-footer__wrapper page-footer__wrapper--ml30">
+      <p class="page-footer__year">
+        Сopyright – all rights reserved&nbsp;2024
+      </p>
+      <a href="#leadform1" class="page-footer__polycy">Политика конфиденциальности</a>
+      <a href="#leadform1" class="page-footer__polycy">Пользовательское соглашение</a>
+    </div>
+    <nav class="page-footer__wrapper">
+      <ul class="main-nav__list main-nav__list--bottom">
+        <div class="">
+          <li class="main-nav__item">
+            <a href="#results">Результаты студентов</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#for-whom">Для кого курс?</a>
+          </li>
+          <li class="main-nav__item"><a href="#about">Про курс</a></li>
+          <li class="main-nav__item"><a href="#license">Кто я?</a></li>
+        </div>
+        <div class="">
+          <li class="main-nav__item"><a href="#review">Отзывы</a></li>
+          <li class="main-nav__item">
+            <a href="#start">Почему курс бесплатный?</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#info">Краткое содержание курса</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#faq">Часто задаваемые вопросы</a>
+          </li>
+        </div>
+      </ul>
+      <a class="btn" href="#leadform1">Зарегистрироваться на обучение</a>
+    </nav>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/intlTelInput.min.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
 
-      <section class="promo container">
-        <h2 class="promo__heading">
-          Бесплатное обучение и практическое сопровождении на реальном торговом
-          счете.<br />
-          <span>Стань профитным трейдером в течении 7 дней</span>
-        </h2>
-        <p class="promo__about">
-          Вы получите базу знаний от команды Smart Trade и в сопровождении
-          специалиста компании заработаете свои первые деньги на финансовых
-          рынках!
-        </p>
-        <form
-          action="#"
-          class="form form--bottom lead-form2"
-          method="POST"
-          id="leadform2"
-        >
-          <div class="input-wrapper">
-            <input
-              type="text"
-              name="firstName"
-              id="firstName2"
-              placeholder="Имя"
-            />
-          </div>
-          <div class="input-wrapper">
-            <input
-              type="text"
-              name="lastName"
-              id="lastName2"
-              placeholder="Фамилия"
-            />
-          </div>
-          <div class="input-wrapper">
-            <input
-              type="email"
-              name="email"
-              id="email2"
-              placeholder="Эл. адрес"
-            />
-          </div>
-          <div class="input-wrapper">
-            <input type="tel" name="phone2" placeholder="" id="phone2" />
-            <input
-              id="realPhone2"
-              class="hidden-phone"
-              type="hidden"
-              name="phone"
-              value=""
-            />
-            <input type="hidden" name="currency" value="usd" />
-            <input id="country2" type="hidden" name="country" value="ru" />
-          </div>
-          <button class="btn submit_btn" type="submit">
-            <span>Зарегистрироваться на обучение</span>
-          </button>
-          <div class="checkbox-group">
-            <input
-              type="checkbox"
-              id="agreement2"
-              name="agreement"
-              value="true"
-              checked=""
-              class="checkbox-group__input"
-            />
-            <label
-              for="agreement2"
-              class="checkbox-group__label checkbox-group__label--disclaimer"
-            >
-              Принимаю пользовательское соглашение
-            </label>
-          </div>
-          <div class="checkbox-group">
-            <input
-              type="checkbox"
-              id="policy2"
-              name="policy"
-              value="true"
-              checked=""
-              class="checkbox-group__input"
-            />
-            <label
-              for="policy2"
-              class="checkbox-group__label checkbox-group__label--disclaimer"
-            >
-              Согласен(а) с политикой конфиденциальности
-            </label>
-          </div>
-          <div class="form_message error inactive"></div>
-        </form>
-      </section>
-    </main>
-
-    <footer class="page-footer container">
-      <div class="page-header__img-wrapper">
-        <picture>
-          <source type="image/webp" srcset="img/img/logo.webp" />
-          <img
-            width="202"
-            class="page-header__img"
-            src="img/img/logo.png"
-            alt="Логотип Halyk Bank"
-          />
-        </picture>
-      </div>
-      <div class="page-footer__wrapper page-footer__wrapper--ml30">
-        <p class="page-footer__year">
-          Сopyright – all rights reserved&nbsp;2024
-        </p>
-        <a href="#leadform1" class="page-footer__polycy"
-          >Политика конфиденциальности</a
-        >
-        <a href="#leadform1" class="page-footer__polycy"
-          >Пользовательское соглашение</a
-        >
-      </div>
-      <nav class="page-footer__wrapper">
-        <ul class="main-nav__list main-nav__list--bottom">
-          <div class="">
-            <li class="main-nav__item">
-              <a href="#results">Результаты студентов</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#for-whom">Для кого курс?</a>
-            </li>
-            <li class="main-nav__item"><a href="#about">Про курс</a></li>
-            <li class="main-nav__item"><a href="#license">Кто я?</a></li>
-          </div>
-          <div class="">
-            <li class="main-nav__item"><a href="#review">Отзывы</a></li>
-            <li class="main-nav__item">
-              <a href="#start">Почему курс бесплатный?</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#info">Краткое содержание курса</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#faq">Часто задаваемые вопросы</a>
-            </li>
-          </div>
-        </ul>
-        <a class="btn" href="#leadform1">Зарегистрироваться на обучение</a>
-      </nav>
-    </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/intlTelInput.min.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    <script src="js/jquery.maskedinput.js"></script>
-
-    <script>
-      var input1 = document.querySelector("#phone1");
-      var phoneInput1 = window.intlTelInput(input1, {
-        separateDialCode: true,
-        utilsScript:
-          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-        initialCountry: "auto",
-        excludeCountries: ["UA"],
-        geoIpLookup: function (success, failure) {
-          $.get("https://ipinfo.io", function () {}, "jsonp").always(function (
-            resp
-          ) {
-            $("#country1").val(resp.country);
-            $("#country2").val(resp.country);
-            var countryCode =
-              resp && checkCountry(resp.country) ? resp.country : "DE";
-            success(countryCode);
-          });
-        },
-      });
-
-      function checkCountry(code) {
-        var arr = ["UA"];
-        return !arr.includes(code);
-      }
-
-      $.validator.addMethod(
-        "validNumber",
-        function (value, element, params) {
-          var obj = params.object;
-          if (obj.isValidNumber()) {
-            var num = obj.getNumber().replace("+", "");
-            $(element)
-              .closest("form")
-              .find(".hidden-phone")
-              .val("+" + num);
-          }
-          return obj.isValidNumber();
-        },
-        "ⓘ Введите правильный номер!"
-      );
-
-      const nameForm1 = document.querySelector("#firstName");
-      const nameForm2 = document.querySelector("#firstName2");
-      const lastNameForm1 = document.querySelector("#lastName");
-      const lastNameForm2 = document.querySelector("#lastName2");
-      const emailForm1 = document.querySelector("#email");
-      const emailForm2 = document.querySelector("#email2");
-
-      function removeExtraSpaces(e) {
-        const valueWithoutSpaces = e.target.value
-          .replace(/\s+/g, " ")
-          .replace(/^\s+|\s+$/, "");
-        e.target.value = valueWithoutSpaces;
-      }
-      nameForm1.addEventListener("focusout", removeExtraSpaces);
-      nameForm2.addEventListener("focusout", removeExtraSpaces);
-      lastNameForm1.addEventListener("focusout", removeExtraSpaces);
-      lastNameForm2.addEventListener("focusout", removeExtraSpaces);
-
-      // Form validation
-      $.validator.addMethod(
-        "alphanumeric",
-        function (value, element) {
-          return (
-            this.optional(element) ||
-            /^[a-zA-Zа-яА-ЯЁё\s]+$/.test(value.replace(/ +/g, " ").trim())
-          ); //RU
-        },
-        "ⓘ Имя может содержать только буквы!"
-      );
-
-      // Email validation
-      $.validator.addMethod(
-        "emailValidation",
-        function (value, element) {
-          return (
-            this.optional(element) ||
-            /^[a-zA-Z0-9_.!#$%&\'*+\-\/=?^_`{|}~]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,61}$/g.test(
-              value
-            )
-          );
-        },
-        "ⓘ Введите правильный адрес"
-      );
-
-      function removeDotsHyphens(e) {
-        const valueWithoutDotsHyphens = e.target.value
-          .replace(/\.+/g, ".")
-          .replace(/-{2,}/g, "--")
-          .replace(/^\.|^-*/, "")
-          .replace(/\.@/, "@");
-        e.target.value = valueWithoutDotsHyphens;
-      }
-      emailForm1.addEventListener("change", removeDotsHyphens);
-      emailForm2.addEventListener("change", removeDotsHyphens);
-
-      //Trim whitespace on email input
-      $(function () {
-        $("input[type=email]").on("keypress", function (e) {
-          if (e.which == 32) return false;
+  <script>
+    var input1 = document.querySelector("#phone1");
+    var phoneInput1 = window.intlTelInput(input1, {
+      separateDialCode: true,
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      initialCountry: "auto",
+      excludeCountries: ["UA"],
+      geoIpLookup: function (success, failure) {
+        $.get("https://ipinfo.io", function () { }, "jsonp").always(function (
+          resp
+        ) {
+          $("#country1").val(resp.country);
+          $("#country2").val(resp.country);
+          var countryCode =
+            resp && checkCountry(resp.country) ? resp.country : "DE";
+          success(countryCode);
         });
-      });
+      },
+    });
 
-      $("#leadform1").validate({
-        rules: {
-          phone1: {
-            required: true,
-            validNumber: {
-              object: phoneInput1,
-            },
-          },
-          firstName: {
-            required: true,
-            alphanumeric: true,
-          },
-          lastName: {
-            required: true,
-            alphanumeric: true,
-          },
-          email: {
-            required: true,
-            email: false,
-            emailValidation: true,
-          },
-          agreement: {
-            required: true,
-          },
-          policy: {
-            required: true,
-          },
-        },
-        messages: {
-          phone1: {
-            required: "ⓘ Это поле обязательное",
-          },
-          firstName: {
-            required: "ⓘ Это поле обязательное",
-          },
-          lastName: {
-            required: "ⓘ Это поле обязательное",
-          },
-          email: {
-            required: "ⓘ Это поле обязательное",
-          },
-          agreement: {
-            required: "ⓘ Это поле обязательное",
-          },
-          policy: {
-            required: "ⓘ Это поле обязательное",
-          },
-        },
-        submitHandler: function (form, event) {
-          sendAjaxForm(form);
-          return false;
-        },
-      });
+    function checkCountry(code) {
+      var arr = ["UA"];
+      return !arr.includes(code);
+    }
 
-      function sendAjaxForm(form) {
-        $.ajax({
-          url: $(form).attr("action"),
-          type: "POST",
-          dataType: "json",
-          data: $(form).serialize(),
-          timeout: 30000,
-          beforeSend: function () {
-            $(form).find(".submit_btn ").html("Отправление");
-            $(form).find(".submit_btn").prop("disabled", true);
+    $.validator.addMethod(
+      "validNumber",
+      function (value, element, params) {
+        var obj = params.object;
+        if (obj.isValidNumber()) {
+          var num = obj.getNumber().replace("+", "");
+          $(element)
+            .closest("form")
+            .find(".hidden-phone")
+            .val("+" + num);
+        }
+        return obj.isValidNumber();
+      },
+      "ⓘ Введите правильный номер!"
+    );
+
+    const nameForm1 = document.querySelector("#firstName");
+    const nameForm2 = document.querySelector("#firstName2");
+    const lastNameForm1 = document.querySelector("#lastName");
+    const lastNameForm2 = document.querySelector("#lastName2");
+    const emailForm1 = document.querySelector("#email");
+    const emailForm2 = document.querySelector("#email2");
+
+    function removeExtraSpaces(e) {
+      const valueWithoutSpaces = e.target.value
+        .replace(/\s+/g, " ")
+        .replace(/^\s+|\s+$/, "");
+      e.target.value = valueWithoutSpaces;
+    }
+    nameForm1.addEventListener("focusout", removeExtraSpaces);
+    nameForm2.addEventListener("focusout", removeExtraSpaces);
+    lastNameForm1.addEventListener("focusout", removeExtraSpaces);
+    lastNameForm2.addEventListener("focusout", removeExtraSpaces);
+
+    // Form validation
+    $.validator.addMethod(
+      "alphanumeric",
+      function (value, element) {
+        return (
+          this.optional(element) ||
+          /^[a-zA-Zа-яА-ЯЁё\s]+$/.test(value.replace(/ +/g, " ").trim())
+        ); //RU
+      },
+      "ⓘ Имя может содержать только буквы!"
+    );
+
+    // Email validation
+    $.validator.addMethod(
+      "emailValidation",
+      function (value, element) {
+        return (
+          this.optional(element) ||
+          /^[a-zA-Z0-9_.!#$%&\'*+\-\/=?^_`{|}~]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,61}$/g.test(
+            value
+          )
+        );
+      },
+      "ⓘ Введите правильный адрес"
+    );
+
+    function removeDotsHyphens(e) {
+      const valueWithoutDotsHyphens = e.target.value
+        .replace(/\.+/g, ".")
+        .replace(/-{2,}/g, "--")
+        .replace(/^\.|^-*/, "")
+        .replace(/\.@/, "@");
+      e.target.value = valueWithoutDotsHyphens;
+    }
+    emailForm1.addEventListener("change", removeDotsHyphens);
+    emailForm2.addEventListener("change", removeDotsHyphens);
+
+    //Trim whitespace on email input
+    $(function () {
+      $("input[type=email]").on("keypress", function (e) {
+        if (e.which == 32) return false;
+      });
+    });
+
+    $("#leadform1").validate({
+      rules: {
+        phone1: {
+          required: true,
+          validNumber: {
+            object: phoneInput1,
           },
-        })
-          .done(function (response) {
-            let result = response;
-            let url = result.url;
-            if (response.status === "ok") {
-              fbq("track", "Lead");
-              call_gtag();
-              ttq.page();
-              $(form).find(".submit_btn").html("Данные отправлены успешно.");
-              if (response.url) {
-                setTimeout(function () {
-                  window.location.href = response.url;
-                }, 1000);
-              } else {
-                $(form).html(
-                  '<div class="form_message success">Ваши данные успешно отправлены. Ожидайте звонка от нашего менеджера.</div>'
-                );
-              }
+        },
+        firstName: {
+          required: true,
+          alphanumeric: true,
+        },
+        lastName: {
+          required: true,
+          alphanumeric: true,
+        },
+        email: {
+          required: true,
+          email: false,
+          emailValidation: true,
+        },
+        agreement: {
+          required: true,
+        },
+        policy: {
+          required: true,
+        },
+      },
+      messages: {
+        phone1: {
+          required: "ⓘ Это поле обязательное",
+        },
+        firstName: {
+          required: "ⓘ Это поле обязательное",
+        },
+        lastName: {
+          required: "ⓘ Это поле обязательное",
+        },
+        email: {
+          required: "ⓘ Это поле обязательное",
+        },
+        agreement: {
+          required: "ⓘ Это поле обязательное",
+        },
+        policy: {
+          required: "ⓘ Это поле обязательное",
+        },
+      },
+      submitHandler: function (form, event) {
+        sendAjaxForm(form);
+        return false;
+      },
+    });
+
+    function sendAjaxForm(form) {
+      $.ajax({
+        url: $(form).attr("action"),
+        type: "POST",
+        dataType: "json",
+        data: $(form).serialize(),
+        timeout: 30000,
+        beforeSend: function () {
+          $(form).find(".submit_btn ").html("Отправление");
+          $(form).find(".submit_btn").prop("disabled", true);
+        },
+      })
+        .done(function (response) {
+          let result = response;
+          let url = result.url;
+          if (response.status === "ok") {
+            fbq("track", "Lead");
+            call_gtag();
+            ttq.page();
+            $(form).find(".submit_btn").html("Данные отправлены успешно.");
+            if (response.url) {
+              setTimeout(function () {
+                window.location.href = response.url;
+              }, 1000);
             } else {
-              $(form).find(".error.form_message").addClass("active");
-              $(form).find(".error.form_message").html(response.message);
-              $(form)
-                .find(".submit_btn ")
-                .html("Зарегистрироваться на обучение");
-              $(form).find(".submit_btn").prop("disabled", false);
+              $(form).html(
+                '<div class="form_message success">Ваши данные успешно отправлены. Ожидайте звонка от нашего менеджера.</div>'
+              );
             }
-          })
-          .fail(function (response) {
+          } else {
             $(form).find(".error.form_message").addClass("active");
+            $(form).find(".error.form_message").html(response.message);
             $(form)
-              .find(".error.form_message")
-              .html("Во время отправки данных произошла ошибка!");
-            $(form).find(".submit_btn ").html("Зарегистрироваться на обучение");
+              .find(".submit_btn ")
+              .html("Зарегистрироваться на обучение");
             $(form).find(".submit_btn").prop("disabled", false);
+          }
+        })
+        .fail(function (response) {
+          $(form).find(".error.form_message").addClass("active");
+          $(form)
+            .find(".error.form_message")
+            .html("Во время отправки данных произошла ошибка!");
+          $(form).find(".submit_btn ").html("Зарегистрироваться на обучение");
+          $(form).find(".submit_btn").prop("disabled", false);
+        });
+    }
+    $(window).on("load", function () {
+      setTimeout(function () {
+        const selectedCountryIso1 = phoneInput1.getSelectedCountryData().iso2;
+        if (selectedCountryIso1 === "at" || selectedCountryIso1 === "de") {
+          var mask1 =
+            jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9) +
+            "?9?9";
+        } else {
+          var mask1 = jQuery("#phone1")
+            .attr("placeholder")
+            .replace(/[0-9]/g, 9);
+        }
+
+        $(document).ready(function () {
+          jQuery("#phone1").mask(mask1, {
+            autoclear: false,
           });
-      }
-      $(window).on("load", function () {
-        setTimeout(function () {
-          const selectedCountryIso1 = phoneInput1.getSelectedCountryData().iso2;
+        });
+
+        jQuery("#phone1").on("countrychange", function (e, countryData) {
+          jQuery("#phone1").val("");
+          const selectedCountryIso1 =
+            phoneInput1.getSelectedCountryData().iso2;
           if (selectedCountryIso1 === "at" || selectedCountryIso1 === "de") {
             var mask1 =
               jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9) +
@@ -1048,109 +775,109 @@
               .attr("placeholder")
               .replace(/[0-9]/g, 9);
           }
-
-          $(document).ready(function () {
-            jQuery("#phone1").mask(mask1, {
-              autoclear: false,
-            });
+          jQuery("#phone1").mask(mask1, {
+            autoclear: false,
           });
+        });
+      }, 1000);
+    });
 
-          jQuery("#phone1").on("countrychange", function (e, countryData) {
-            jQuery("#phone1").val("");
-            const selectedCountryIso1 =
-              phoneInput1.getSelectedCountryData().iso2;
-            if (selectedCountryIso1 === "at" || selectedCountryIso1 === "de") {
-              var mask1 =
-                jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9) +
-                "?9?9";
-            } else {
-              var mask1 = jQuery("#phone1")
-                .attr("placeholder")
-                .replace(/[0-9]/g, 9);
-            }
-            jQuery("#phone1").mask(mask1, {
-              autoclear: false,
-            });
+    //second form
+    var input2 = document.querySelector("#phone2");
+    var phoneInput2 = window.intlTelInput(input2, {
+      separateDialCode: true,
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      initialCountry: "auto",
+      excludeCountries: ["UA"],
+      geoIpLookup: function (success, failure) {
+        $.get("https://ipinfo.io", function () { }, "jsonp").always(function (
+          resp
+        ) {
+          var countryCode =
+            resp && checkCountry(resp.country) ? resp.country : "DE";
+          success(countryCode);
+        });
+      },
+    });
+
+    $("#leadform2").validate({
+      rules: {
+        phone2: {
+          required: true,
+          validNumber: {
+            object: phoneInput2,
+          },
+        },
+        firstName: {
+          required: true,
+          alphanumeric: true,
+        },
+        lastName: {
+          required: true,
+          alphanumeric: true,
+        },
+        email: {
+          required: true,
+          email: false,
+          emailValidation: true,
+        },
+        agreement: {
+          required: true,
+        },
+        policy: {
+          required: true,
+        },
+      },
+      messages: {
+        phone2: {
+          required: "ⓘ Это поле обязательное",
+        },
+        firstName: {
+          required: "ⓘ Это поле обязательное",
+        },
+        lastName: {
+          required: "ⓘ Это поле обязательное",
+        },
+        email: {
+          required: "ⓘ Это поле обязательное",
+        },
+        agreement: {
+          required: "ⓘ Это поле обязательное",
+        },
+        policy: {
+          required: "ⓘ Это поле обязательное",
+        },
+      },
+      submitHandler: function (form, event) {
+        sendAjaxForm(form);
+        return false;
+      },
+    });
+
+    $(window).on("load", function () {
+      setTimeout(function () {
+        const selectedCountryIso2 = phoneInput2.getSelectedCountryData().iso2;
+        if (selectedCountryIso2 === "at" || selectedCountryIso2 === "de") {
+          var mask1 =
+            jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9) +
+            "?9?9";
+        } else {
+          var mask1 = jQuery("#phone2")
+            .attr("placeholder")
+            .replace(/[0-9]/g, 9);
+        }
+
+        $(document).ready(function () {
+          jQuery("#phone2").mask(mask1, {
+            autoclear: false,
           });
-        }, 1000);
-      });
+        });
 
-      //second form
-      var input2 = document.querySelector("#phone2");
-      var phoneInput2 = window.intlTelInput(input2, {
-        separateDialCode: true,
-        utilsScript:
-          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-        initialCountry: "auto",
-        excludeCountries: ["UA"],
-        geoIpLookup: function (success, failure) {
-          $.get("https://ipinfo.io", function () {}, "jsonp").always(function (
-            resp
-          ) {
-            var countryCode =
-              resp && checkCountry(resp.country) ? resp.country : "DE";
-            success(countryCode);
-          });
-        },
-      });
-
-      $("#leadform2").validate({
-        rules: {
-          phone2: {
-            required: true,
-            validNumber: {
-              object: phoneInput2,
-            },
-          },
-          firstName: {
-            required: true,
-            alphanumeric: true,
-          },
-          lastName: {
-            required: true,
-            alphanumeric: true,
-          },
-          email: {
-            required: true,
-            email: false,
-            emailValidation: true,
-          },
-          agreement: {
-            required: true,
-          },
-          policy: {
-            required: true,
-          },
-        },
-        messages: {
-          phone2: {
-            required: "ⓘ Это поле обязательное",
-          },
-          firstName: {
-            required: "ⓘ Это поле обязательное",
-          },
-          lastName: {
-            required: "ⓘ Это поле обязательное",
-          },
-          email: {
-            required: "ⓘ Это поле обязательное",
-          },
-          agreement: {
-            required: "ⓘ Это поле обязательное",
-          },
-          policy: {
-            required: "ⓘ Это поле обязательное",
-          },
-        },
-        submitHandler: function (form, event) {
-          sendAjaxForm(form);
-          return false;
-        },
-      });
-
-      $(window).on("load", function () {
-        setTimeout(function () {
-          const selectedCountryIso2 = phoneInput2.getSelectedCountryData().iso2;
+        jQuery("#phone2").on("countrychange", function (e, countryData) {
+          jQuery("#phone2").val("");
+          const selectedCountryIso2 =
+            phoneInput2.getSelectedCountryData().iso2;
           if (selectedCountryIso2 === "at" || selectedCountryIso2 === "de") {
             var mask1 =
               jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9) +
@@ -1160,32 +887,13 @@
               .attr("placeholder")
               .replace(/[0-9]/g, 9);
           }
-
-          $(document).ready(function () {
-            jQuery("#phone2").mask(mask1, {
-              autoclear: false,
-            });
+          jQuery("#phone2").mask(mask1, {
+            autoclear: false,
           });
+        });
+      }, 1000);
+    });
+  </script>
+</body>
 
-          jQuery("#phone2").on("countrychange", function (e, countryData) {
-            jQuery("#phone2").val("");
-            const selectedCountryIso2 =
-              phoneInput2.getSelectedCountryData().iso2;
-            if (selectedCountryIso2 === "at" || selectedCountryIso2 === "de") {
-              var mask1 =
-                jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9) +
-                "?9?9";
-            } else {
-              var mask1 = jQuery("#phone2")
-                .attr("placeholder")
-                .replace(/[0-9]/g, 9);
-            }
-            jQuery("#phone2").mask(mask1, {
-              autoclear: false,
-            });
-          });
-        }, 1000);
-      });
-    </script>
-  </body>
 </html>
