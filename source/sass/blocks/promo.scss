@@ -1,11 +1,13 @@
 .promo {
-  padding: 50px 0;
+  padding: 50px 0 150px;
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  min-width: 62%;
+  &:first-child {
+    min-width: 62%;
+  }
 
   @media (max-width: $tablet-width) {
     min-width: 100%;
@@ -48,6 +50,7 @@
   display: flex;
   align-items: center;
   gap: 67px;
+  padding-bottom: 50px;
   @media (max-width: $tablet-width) {
     flex-direction: column;
     gap: 50px;
@@ -63,7 +66,7 @@ iframe {
 }
 
 .promo__video-bcg {
-  background-image: url(../img/video_poster.jpg);
+  background-image: url(../img/img/video_poster.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -113,4 +116,40 @@ iframe {
 
 .lead-form2 {
   margin: auto;
+}
+
+.promo-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
+
+  &__section {
+    height: 230px;
+    &--team {
+      background: url("../img/img/promo_banner1.jpg") no-repeat center center;
+      background-size: cover;
+      border-bottom: 4px solid $main-color;
+      box-sizing: border-box;
+    }
+
+    &--free {
+      background: url("../img/img/promo_banner2.jpg") no-repeat center center;
+      background-size: cover;
+    }
+
+    &--success {
+      background: url("../img/img/promo_banner3.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+  &__info {
+    padding: 25px 23px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
 }

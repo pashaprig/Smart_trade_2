@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACP,WAAW,CAAE,KAAK,CACnB",
+    "sources": [
+        "../source/sass/blocks/for-who.scss"
+    ],
+    "names": [],
+    "file": "for-who.min.css"
+}
