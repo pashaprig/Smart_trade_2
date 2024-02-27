@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAC,CACL,WAAW,CAAE,KAAK,CAClB,gBAAgB,CAAE,+BAA+B,CAClD",
+    "sources": [
+        "../source/sass/blocks/hello.scss"
+    ],
+    "names": [],
+    "file": "hello.min.css"
+}

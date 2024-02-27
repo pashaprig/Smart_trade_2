@@ -127,21 +127,14 @@ button {
 }
 
 .heading {
-  margin-bottom: 30px;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 48px;
-  font-weight: 400;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .heading--small {
   margin-bottom: 25px;
   font-size: 36px;
-}
-
-@media (max-width: 768px) {
-  .heading {
-    font-size: 24px;
-  }
 }
 
 .section-heading {
@@ -3243,6 +3236,129 @@ iframe {
   line-height: 29px;
 }
 
+.results {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #181818;
+}
+
+.results__heading {
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.results__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 33px;
+          column-gap: 33px;
+  row-gap: 50px;
+}
+
+.results__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000000;
+  background: url("../img/bcg/results-bcg.webp") center/cover no-repeat, #ffffff;
+  border-radius: 24.013px;
+  -webkit-box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.19);
+          box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.19);
+}
+
+.results__item-bcg {
+  padding: 60px 15px;
+  padding-top: 100px;
+  border-radius: 24.013px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.results__img {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  border: 12px solid #972fff;
+}
+
+.results__name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.results__name span {
+  font-weight: 700;
+}
+
+.results__info {
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+.results__info:last-child {
+  margin-bottom: 0;
+}
+
+.results__info--bold {
+  font-weight: 700;
+  color: #972fff;
+}
+
+.results__table {
+  border-collapse: collapse;
+}
+
+.results__table td {
+  text-align: center;
+  padding: 18px;
+  width: 50px;
+  height: 50px;
+  min-width: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.results__table td:first-child {
+  border-top: none;
+  border-left: none;
+  padding-left: 0;
+}
+
+.results__table td:nth-child(2) {
+  border-top: none;
+  border-right: none;
+  padding-right: 0;
+  white-space: nowrap;
+}
+
+.results__table tr:last-child td:first-child {
+  border-left: none;
+  border-bottom: none;
+  padding-left: 0;
+}
+
+.results__table tr:last-child td:last-child {
+  border-right: none;
+  border-bottom: none;
+  padding-right: 0;
+}
+
 .review {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3418,7 +3534,64 @@ iframe {
   border: none;
 }
 
-.for-who {
+.for-whom {
   padding-top: 150px;
+}
+
+.for-whom-banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .for-whom-banner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.for-whom-banner__section {
+  height: 230px;
+}
+
+.for-whom-banner__section--newbies {
+  background: url("../img/img/for-whom__banner1.jpg") no-repeat center center;
+  background-size: cover;
+  border-bottom: 4px solid #972fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.for-whom-banner__section--experienced {
+  background: url("../img/img/for-whom__banner2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.for-whom-banner__section--passive-investment {
+  background: url("../img/img/for-whom__banner3.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.for-whom-banner__info {
+  padding: 25px 23px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.for-whom-banner__text {
+  padding: 25px 23px 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.for-whom .btn {
+  margin: auto;
+  max-width: 348px;
 }
 /*# sourceMappingURL=style.css.map */
