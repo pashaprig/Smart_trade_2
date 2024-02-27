@@ -70,6 +70,8 @@ class App {
             settings: {
               slidesToShow: 2,
               dots: true,
+              autoplay: true,
+              autoplaySpeed: 3000,
             },
           },
           {
@@ -83,6 +85,32 @@ class App {
           },
         ],
       });
+
+      $(".slider-about").slick({
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: '380px',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              centerMode: false,
+              autoplay: true,
+              autoplaySpeed: 3000,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              centerMode: false,
+              slidesToShow: 1,
+              autoplay: true,
+              autoplaySpeed: 3000,
+            },
+          },
+        ],
+      })
     });
   }
 
