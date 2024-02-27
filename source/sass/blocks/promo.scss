@@ -1,27 +1,14 @@
 .promo {
-  margin-bottom: 150px;
-  padding: 50px 50px;
-  @media (max-width: $tablet-width) {
-    flex-direction: column;
-    margin-bottom: 60px;
-    padding: 0;
-  }
+  padding: 50px 0;
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-
-  &--mw62 {
-    min-width: 62%;
-  }
+  min-width: 62%;
 
   @media (max-width: $tablet-width) {
-    padding: 0 25px;
-
-    &--mw62 {
-      padding: 0;
-    }
+    min-width: 100%;
   }
 }
 
@@ -36,6 +23,11 @@
   span {
     color: $main-color;
   }
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 38px;
+    padding: 0 5px;
+  }
 }
 
 .promo__about {
@@ -47,7 +39,8 @@
   text-align: center;
 
   @media (max-width: $tablet-width) {
-    font-size: 16px;
+    margin-bottom: 50px;
+    padding: 0 20px;
   }
 }
 
@@ -55,6 +48,10 @@
   display: flex;
   align-items: center;
   gap: 67px;
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 iframe {

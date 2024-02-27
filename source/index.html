@@ -85,7 +85,7 @@
           рынках!
         </p>
         <div class="promo__content">
-          <div class="promo__wrapper promo__wrapper--mw62">
+          <div class="promo__wrapper">
             <div class="promo__video-bcg">
               <div class="promo__video">
                 <button type="button" id="button-play">
@@ -346,7 +346,7 @@
             <input id="country2" type="hidden" name="country" value="ru" />
           </div>
           <button class="btn submit_btn" type="submit">
-            <span>Отправить заявку</span>
+            <span>Зарегистрироваться на обучение</span>
           </button>
           <div class="checkbox-group">
             <input
@@ -633,7 +633,9 @@
             } else {
               $(form).find(".error.form_message").addClass("active");
               $(form).find(".error.form_message").html(response.message);
-              $(form).find(".submit_btn ").html("Начать зарабатывать");
+              $(form)
+                .find(".submit_btn ")
+                .html("Зарегистрироваться на обучение");
               $(form).find(".submit_btn").prop("disabled", false);
             }
           })
@@ -642,7 +644,7 @@
             $(form)
               .find(".error.form_message")
               .html("Во время отправки данных произошла ошибка!");
-            $(form).find(".submit_btn ").html("Начать зарабатывать");
+            $(form).find(".submit_btn ").html("Зарегистрироваться на обучение");
             $(form).find(".submit_btn").prop("disabled", false);
           });
       }
