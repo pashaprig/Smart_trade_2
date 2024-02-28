@@ -1,0 +1,18 @@
+.about {
+  padding: 150px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 100px 25px;
+  }
+}
+
+.about__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: fit-content;
+  height: 190px;
+  padding: 0 50px;
+  background: url('../img/logos/shadow.webp') center/contain no-repeat;
+}
