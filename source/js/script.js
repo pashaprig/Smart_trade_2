@@ -7,6 +7,7 @@ class App {
     this.afterVideoPlay();
     this.onButtonPlay();
     this.reviewsVideoPlay()
+    this.onFaqBtnClick();
   }
 
   constructor() {
@@ -17,6 +18,7 @@ class App {
       ".promo__video-container"
     );
     this.reviewsVideos = document.querySelectorAll(".review__video");
+    this.faqBtns = document.querySelectorAll(".faq-btn");
   }
 
   initMobileMenu() {
@@ -29,15 +31,15 @@ class App {
     };
 
     const closeOpen = () => {
-      navToggle.addEventListener('click', function () {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-          navButtonText.textContent = "Close"
+      navToggle.addEventListener("click", function () {
+        if (navMain.classList.contains("main-nav--closed")) {
+          navMain.classList.remove("main-nav--closed");
+          navMain.classList.add("main-nav--opened");
+          navButtonText.textContent = "Close";
         } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-          navButtonText.textContent = "Меню"
+          navMain.classList.add("main-nav--closed");
+          navMain.classList.remove("main-nav--opened");
+          navButtonText.textContent = "Меню";
         }
       });
     };
@@ -91,7 +93,7 @@ class App {
       $(".slider-about").slick({
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: '380px',
+        centerPadding: "380px",
         responsive: [
           {
             breakpoint: 1024,
@@ -112,7 +114,7 @@ class App {
             },
           },
         ],
-      })
+      });
     });
   }
 
@@ -152,6 +154,17 @@ class App {
     }
 
     this.reviewsVideos.forEach((rv)=>handlePlay(rv))
+  }
+
+  onFaqBtnClick() {
+    this.faqBtns.forEach(function (element) {
+      element.addEventListener("click", function (e) {
+        const faqBlock = e.target.closest(".faq-block");
+        faqBlock.classList.toggle("active");
+
+        $(faqBlock).find(".faq-block__body").slideToggle();
+      });
+    });
   }
 }
 
