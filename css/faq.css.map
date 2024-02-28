@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,OAAO;CACjB;;AAED,AAAA,IAAI,CAAC,WAAW,CAAC;EACf,GAAG,EAAE,IAAI;EACT,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,IAAI,CAAC,gBAAgB,CAAC;EACpB,SAAS,EAAE,KAAK;CACjB",
+    "sources": [
+        "../source/sass/blocks/faq.scss"
+    ],
+    "names": [],
+    "file": "faq.css"
+}

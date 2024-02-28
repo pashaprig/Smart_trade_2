@@ -1,0 +1,22 @@
+.faq {
+  padding: 150px 0;
+}
+
+.faq .faq-blocks {
+  gap: 30px;
+  max-width: 896px;
+  margin: auto;
+  @media (max-width: $tablet-width) {
+    gap: 50px;
+  }
+}
+
+.faq .faq-block__body {
+  max-width: 715px;
+}
+
+.faq .faq-question {
+  @media (max-width: $tablet-width) {
+    max-width: 200px;
+  }
+}

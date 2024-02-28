@@ -4004,4 +4004,151 @@ iframe {
 .info .faq-block__body {
   max-width: 422px;
 }
+
+.why {
+  padding: 150px 0;
+  background-image: url(../img/bcg/why-bcg.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  position: relative;
+}
+
+.why:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: -webkit-gradient(linear, right top, left top, from(#121212), color-stop(2.76%, rgba(18, 18, 18, 0)), color-stop(42.19%, rgba(18, 18, 18, 0)), color-stop(50%, #121212));
+  background: linear-gradient(270deg, #121212 0%, rgba(18, 18, 18, 0) 2.76%, rgba(18, 18, 18, 0) 42.19%, #121212 50%);
+  background-position: top center;
+}
+
+.why:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25.08%, #121212), color-stop(34.65%, rgba(18, 18, 18, 0.21)), color-stop(76.77%, #121212));
+  background: linear-gradient(180deg, #121212 25.08%, rgba(18, 18, 18, 0.21) 34.65%, #121212 76.77%);
+  background-position: top;
+  background-size: 100%;
+}
+
+@media (max-width: 1280px) {
+  .why:after {
+    background: -webkit-gradient(linear, right top, left top, color-stop(36.76%, rgba(18, 18, 18, 0)), color-stop(49.19%, #121212));
+    background: linear-gradient(270deg, rgba(18, 18, 18, 0) 36.76%, #121212 49.19%);
+  }
+}
+
+@media (max-width: 768px) {
+  .why {
+    padding-top: 112px;
+    background-image: none;
+  }
+  .why:after, .why:before {
+    display: none;
+  }
+}
+
+.why__wrapper {
+  max-width: 45%;
+  margin: 0 auto 0 0;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .why__wrapper {
+    max-width: 100%;
+  }
+}
+
+.why__text {
+  margin: 50px 0 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .why__text {
+    padding: 0 15px;
+  }
+}
+
+.why .btn {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .why .btn {
+    margin: 0 0 0 15px;
+  }
+}
+
+.why__img {
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.why__img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 200%;
+  height: 100%;
+  z-index: 1;
+  background: -webkit-gradient(linear, right top, left top, color-stop(36.76%, rgba(18, 18, 18, 0)), color-stop(49.19%, #121212));
+  background: linear-gradient(270deg, rgba(18, 18, 18, 0) 36.76%, #121212 49.19%);
+  background-position: top center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.why__img:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2.08%, #121212), color-stop(33.65%, rgba(18, 18, 18, 0.21)), color-stop(93.77%, #121212));
+  background: linear-gradient(180deg, #121212 2.08%, rgba(18, 18, 18, 0.21) 33.65%, #121212 93.77%);
+  background-position: top;
+  background-size: 100%;
+}
+
+@media (max-width: 768px) {
+  .why__img {
+    display: block;
+    background-image: url(../img/bcg/why-bcg.png);
+    height: 374px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .why .section-heading {
+    padding: 0 15px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

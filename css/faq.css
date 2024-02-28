@@ -1,0 +1,14 @@
+.faq {
+  padding: 150px 0;
+}
+
+.faq .faq-blocks {
+  gap: 30px;
+  max-width: 896px;
+  margin: auto;
+}
+
+.faq .faq-block__body {
+  max-width: 715px;
+}
+/*# sourceMappingURL=faq.css.map */
