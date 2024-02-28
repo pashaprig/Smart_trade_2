@@ -1,77 +1,79 @@
 .review {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  margin-bottom: 125px;
-  font-family:"Inter", "Arial", sans-serif;
-  font-size: 16px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: $bcg-header-footer;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 60px;
+    padding: 50px 1px;
   }
 }
 
-.review__heading {
-  text-align: center;
+.review__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
-    text-align: left;
-    font-size: 36px;
+    row-gap: 30px;
+  }
+}
+
+.review__item {
+  position: relative;
+  width: 31.5%;
+  height: 466px;
+  border-radius: 25px;
+  background: lightgray;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.review__video-container {
+  padding: 56.25% 0 0 0;
+}
+
+.review__video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  button {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    background: $main-color;
+    border-radius: 50%;
+    border: none;
+
+    svg {
+      margin-left: 8px;
+      fill: $basic-white;
+    }
+
+    &:hover {
+      background: $btn-hover;
+    }
   }
 }
 
 .review__about {
+  position: absolute;
+  bottom: 0;
+  padding: 26px 6px 11px;
   text-align: center;
-  margin-bottom: 40px;
-  padding: 0 150px;
-
-  @media (max-width: $tablet-width) {
-    text-align: left;
-    padding: 0;
-  }
-}
-
-.review__card {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;
-  padding: 15px;
-  background: $basic-white;
-  border: 1px solid $att-color;
-  border-radius: 15px;
-
-  @media (max-width: $tablet-width) {
-    margin: 0;
-  }
-}
-
-.review__avatae-wrapper {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.review__name-wrapper {
-  display: flex;
-  flex-direction: column;
-
-  cite {
-    font-style: normal;
-  }
-}
-
-.review__img {
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.review__blockquote {
-  margin-bottom: 40px;
-}
-
-.review__time {
-  color: $main2-color;
-  margin-top: auto;
+  font-size: 19px;
+  font-weight: 500;
+  background: $main-color;
+  border-radius: 0 0 25px 25px;
 }

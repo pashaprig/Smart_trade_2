@@ -6,6 +6,7 @@ class App {
     this.initSlider();
     this.afterVideoPlay();
     this.onButtonPlay();
+    this.reviewsVideoPlay()
     this.onFaqBtnClick();
   }
 
@@ -16,6 +17,7 @@ class App {
     this.promoVideoContainer = document.querySelector(
       ".promo__video-container"
     );
+    this.reviewsVideos = document.querySelectorAll(".review__video");
     this.faqBtns = document.querySelectorAll(".faq-btn");
   }
 
@@ -135,6 +137,23 @@ class App {
     };
 
     this.btnPlay.addEventListener("click", playVideo);
+  }
+
+  reviewsVideoPlay() {
+    const handlePlay = (wrapper) =>{
+      const btnPlay = wrapper.querySelector('.btn-play')
+      const iframe = wrapper.querySelector("iframe");
+      const player = new Vimeo.Player(iframe);
+
+      const play = () => {
+        player.play()
+        btnPlay.style.display = "none";
+      }
+
+      btnPlay.addEventListener('click', play)
+    }
+
+    this.reviewsVideos.forEach((rv)=>handlePlay(rv))
   }
 
   onFaqBtnClick() {
