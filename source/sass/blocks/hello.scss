@@ -14,8 +14,10 @@
     z-index: 1;
     background: linear-gradient(
       270deg,
-      rgba(18, 18, 18, 0) 36.76%,
-      #121212 49.19%
+      #121212 0%,
+      rgba(18, 18, 18, 0) 2.76%,
+      rgba(18, 18, 18, 0) 42.19%,
+      #121212 50%
     );
     background-position: top center;
     transform: rotate(180deg);
@@ -37,6 +39,15 @@
     );
     background-position: top;
     background-size: 100%;
+  }
+  @media (max-width: $large-screen) {
+    &:after {
+      background: linear-gradient(
+        270deg,
+        rgba(18, 18, 18, 0) 36.76%,
+        #121212 49.19%
+      );
+    }
   }
   @media (max-width: $tablet-width) {
     background-image: none;

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,AAAA,CACP,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACzB",
+    "sources": [
+        "../source/sass/blocks/faq-block.scss"
+    ],
+    "names": [],
+    "file": "faq-block.min.css"
+}

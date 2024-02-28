@@ -1,0 +1,46 @@
+.info {
+  padding-top: 150px;
+  background-image: url(../img/bcg/info-bcg.png);
+  background-position: top -139% center;
+  background-size: 100%;
+  @media (max-width: $tablet-width) {
+    padding-top: 120px;
+    background-position: top 98% left 2%;
+    background-size: 300%;
+  }
+}
+
+.info .section-heading {
+  max-width: 1062px;
+}
+
+.info__wrapper {
+  max-width: 706px;
+}
+
+.info__text {
+  margin-bottom: 50px;
+  max-width: 603px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  @media (max-width: $tablet-width) {
+    padding: 0 15px;
+  }
+}
+
+.info .faq-blocks {
+  gap: 10px;
+  @media (max-width: $tablet-width) {
+    background-image: url(../img/bcg/info-bcg.png);
+    padding-top: 120px;
+    background-position: left 32%;
+    background-size: 200%;
+    gap: 50px;
+  }
+}
+
+.info .faq-question,
+.info .faq-block__body {
+  max-width: 422px;
+}
