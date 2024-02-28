@@ -1,11 +1,11 @@
 .info {
   padding-top: 150px;
   background-image: url(../img/bcg/info-bcg.png);
-  background-position: top -139% center;
+  background-position: top -895px center;
   background-size: 100%;
   @media (max-width: $tablet-width) {
     padding-top: 120px;
-    background-position: top 98% left 2%;
+    background-position: left 0px top -742px;
     background-size: 300%;
   }
 }
@@ -34,7 +34,7 @@
   @media (max-width: $tablet-width) {
     background-image: url(../img/bcg/info-bcg.png);
     padding-top: 120px;
-    background-position: left 32%;
+    background-position: left 1000px;
     background-size: 200%;
     gap: 50px;
   }
