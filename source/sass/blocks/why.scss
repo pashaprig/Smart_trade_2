@@ -1,6 +1,7 @@
-.hello {
-  background-image: url(../img/bcg/hello-bcg.jpg);
-  background-position: top 2px left;
+.why {
+  padding: 150px 0;
+  background-image: url(../img/bcg/why-bcg.png);
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: 50% auto;
   position: relative;
@@ -20,7 +21,6 @@
       #121212 50%
     );
     background-position: top center;
-    transform: rotate(180deg);
   }
   &:before {
     content: "";
@@ -32,9 +32,9 @@
     z-index: 1;
     background: linear-gradient(
       180deg,
-      #121212 2.08%,
-      rgba(18, 18, 18, 0.21) 33.65%,
-      #121212 93.77%
+      #121212 25.08%,
+      rgba(18, 18, 18, 0.21) 34.65%,
+      #121212 76.77%
     );
     background-position: top;
     background-size: 100%;
@@ -49,6 +49,7 @@
     }
   }
   @media (max-width: $tablet-width) {
+    padding-top: 112px;
     background-image: none;
     &:after,
     &:before {
@@ -57,41 +58,34 @@
   }
 }
 
-.section-heading--bright {
-  color: $main-color;
-  text-align: left;
-}
-
-.hello__wrapper {
+.why__wrapper {
   max-width: 45%;
-  margin: 0 0 0 auto;
+  margin: 0 auto 0 0;
   position: relative;
   z-index: 3;
   @media (max-width: $tablet-width) {
     max-width: 100%;
-    padding: 0 15px;
-    margin-bottom: 90px;
   }
 }
 
-.hello ul {
+.why__text {
+  margin: 50px 0 70px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-left: 25px;
-}
-
-.hello ul li {
-  list-style-type: disc;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-  &::marker {
-    color: $main-color;
+  @media (max-width: $tablet-width) {
+    padding: 0 15px;
   }
 }
 
-.hello__img {
+.why .btn {
+  max-width: fit-content;
+  @media (max-width: $tablet-width) {
+    margin: 0 0 0 15px;
+  }
+}
+
+.why__img {
   display: none;
   position: relative;
   overflow: hidden;
@@ -130,9 +124,15 @@
   }
   @media (max-width: $tablet-width) {
     display: block;
-    background-image: url(../img/bcg/hello-bcg.jpg);
+    background-image: url(../img/bcg/why-bcg.png);
     height: 374px;
     background-size: cover;
     background-position: center;
+  }
+}
+
+.why .section-heading {
+  @media (max-width: $tablet-width) {
+    padding: 0 15px;
   }
 }

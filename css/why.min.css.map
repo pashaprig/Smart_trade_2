@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,AAAC,CACH,WAAW,CAAE,KAAK,CACnB",
+    "sources": [
+        "../source/sass/blocks/why.scss"
+    ],
+    "names": [],
+    "file": "why.min.css"
+}
