@@ -6,7 +6,7 @@ class App {
     this.initSlider();
     this.afterVideoPlay();
     this.onButtonPlay();
-    this.reviewsVideoPlay()
+    this.reviewsVideoPlay();
     this.onFaqBtnClick();
   }
 
@@ -140,20 +140,20 @@ class App {
   }
 
   reviewsVideoPlay() {
-    const handlePlay = (wrapper) =>{
-      const btnPlay = wrapper.querySelector('.btn-play')
+    const handlePlay = (wrapper) => {
+      const btnPlay = wrapper.querySelector(".btn-play");
       const iframe = wrapper.querySelector("iframe");
       const player = new Vimeo.Player(iframe);
 
       const play = () => {
-        player.play()
+        player.play();
         btnPlay.style.display = "none";
-      }
+      };
 
-      btnPlay.addEventListener('click', play)
-    }
+      btnPlay.addEventListener("click", play);
+    };
 
-    this.reviewsVideos.forEach((rv)=>handlePlay(rv))
+    this.reviewsVideos.forEach((rv) => handlePlay(rv));
   }
 
   onFaqBtnClick() {
@@ -161,8 +161,6 @@ class App {
       element.addEventListener("click", function (e) {
         const faqBlock = e.target.closest(".faq-block");
         faqBlock.classList.toggle("active");
-
-        $(faqBlock).find(".faq-block__body").slideToggle();
       });
     });
   }
