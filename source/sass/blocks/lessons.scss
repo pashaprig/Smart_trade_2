@@ -36,7 +36,8 @@
 }
 
 .faq-block__content,
-.faq-block__content ol {
+.faq-block__content ol,
+.faq-block__content ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
