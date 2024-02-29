@@ -52,9 +52,9 @@
   font-weight: 400;
   font-display: swap;
   src: local("Inter Regular"),
-    url("../fonts/inter/Montserrat-Regular400.woff2") format("woff2"),
-    url("../fonts/inter/Montserrat-Regular400.woff") format("woff"),
-    url("../fonts/inter/Montserrat-Regular400.ttf") format("truetype");
+    url("../fonts/montserrat/Montserrat-Regular400.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Regular400.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Regular400.ttf") format("truetype");
 }
 
 @font-face {
@@ -63,9 +63,9 @@
   font-weight: 500;
   font-display: swap;
   src: local("Inter Medium"),
-    url("../fonts/inter/Montserrat-Medium500.woff2") format("woff2"),
-    url("../fonts/inter/Montserrat-Medium500.woff") format("woff"),
-    url("../fonts/inter/Montserrat-Medium500.ttf") format("truetype");
+    url("../fonts/montserrat/Montserrat-Medium500.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Medium500.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Medium500.ttf") format("truetype");
 }
 
 @font-face {
@@ -74,7 +74,7 @@
   font-weight: 700;
   font-display: swap;
   src: local("Inter Bold"),
-    url("../fonts/inter/Montserrat-Bold700.woff2") format("woff2"),
-    url("../fonts/inter/Montserrat-Bold700.woff") format("woff"),
-    url("../fonts/inter/Montserrat-Bold700.ttf") format("truetype");
+    url("../fonts/montserrat/Montserrat-Bold700.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Bold700.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Bold700.ttf") format("truetype");
 }
