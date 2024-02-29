@@ -35,7 +35,6 @@
 }
 
 // Proxima Nova
-
 @font-face {
   font-family: "Proxima Nova";
   font-style: normal;
@@ -44,4 +43,38 @@
   src: local("ProximaNova-Regular"),
     url("../fonts/proxima_nova/ProximaNova-Regular.woff") format("woff"),
     url("../fonts/proxima_nova/ProximaNova-Regular.ttf") format("truetype");
+}
+
+// Montserrat
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Inter Regular"),
+    url("../fonts/montserrat/Montserrat-Regular400.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Regular400.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Regular400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Inter Medium"),
+    url("../fonts/montserrat/Montserrat-Medium500.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Medium500.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Medium500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Inter Bold"),
+    url("../fonts/montserrat/Montserrat-Bold700.woff2") format("woff2"),
+    url("../fonts/montserrat/Montserrat-Bold700.woff") format("woff"),
+    url("../fonts/montserrat/Montserrat-Bold700.ttf") format("truetype");
 }

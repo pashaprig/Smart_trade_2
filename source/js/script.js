@@ -1,5 +1,3 @@
-// MENU
-
 class App {
   init() {
     this.initMobileMenu();
