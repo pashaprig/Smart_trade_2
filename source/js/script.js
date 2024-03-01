@@ -1,11 +1,11 @@
 class App {
   init() {
     this.initMobileMenu();
-    this.onFaqBtnClick();
+    this.onFaqBlockClick();
   }
 
   constructor() {
-    this.faqBtns = document.querySelectorAll(".faq-btn");
+    this.faqBlocks = document.querySelectorAll(".faq-block");
   }
 
   initMobileMenu() {
@@ -50,13 +50,10 @@ class App {
     linksClick();
   }
 
-  onFaqBtnClick() {
-    this.faqBtns.forEach(function (element) {
+  onFaqBlockClick() {
+    this.faqBlocks.forEach(function (element) {
       element.addEventListener("click", function (e) {
-        const faqBlock = e.target.closest(".faq-block");
-        faqBlock.classList.toggle("active");
-
-        $(faqBlock).find(".faq-block__body").slideToggle();
+        element.classList.toggle("active");
       });
     });
   }
