@@ -1,50 +1,76 @@
 .main-nav {
-  z-index: 4;
+  //Desktop-first
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  padding: 98px 50px;
-  background: $bcg-black;
-
-  .btn {
-    display: flex;
-    margin-top: 50px;
-    width: max-content;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
 
   & .main-nav__item > a {
     font-size: 20px;
     color: $basic-white;
   }
 
-  &--closed {
+  .btn {
+    margin-left: 100px;
     background: transparent;
-    min-height: 85px;
+    border: 1px solid $main-color;
+  }
 
-    & .main-nav__list,
+  @media (max-width: $tablet-width) {
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 98px 50px;
+    background: $bcg-black;
+
     .btn {
-      display: none;
+      display: flex;
+      margin-top: 120px;
+      margin-left: 0;
+      width: max-content;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      span {
+        display: none;
+      }
+    }
+
+    &--closed {
+      background: transparent;
+      min-height: 85px;
+
+      & .main-nav__list,
+      .btn {
+        display: none;
+      }
     }
   }
 }
 
 .main-nav--nojs .main-nav__toggle {
-  display: block;
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .main-nav__item {
   cursor: pointer;
   display: flex;
   align-items: center;
-  width: 100%;
   min-height: 28px;
   margin-bottom: 35px;
+
+  :hover {
+    border-bottom: 1px solid $main-color;
+  }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 20px;
@@ -62,29 +88,19 @@
 }
 
 .main-nav__list {
+  display: flex;
+  gap: 70px;
   margin-top: 25px;
-  display: block;
 
   @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 50px;
     margin-top: 0;
-  }
-
-  &--bottom {
-    display: flex;
-    gap: 60px;
-    margin-top: 0;
-
-    .main-nav__item {
-      margin-bottom: 27px;
-
-      >a{
-        color: $basic-white;
-      }
-    }
   }
 }
 
 .main-nav__toggle {
+  display: none;
   overflow: hidden;
   position: absolute;
   top: 30px;
@@ -98,6 +114,7 @@
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
+    display: block;
     top: 20px;
     right: 25px;
   }
