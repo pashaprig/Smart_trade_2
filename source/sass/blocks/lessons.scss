@@ -15,6 +15,7 @@
     font-size: 32px;
     line-height: 38px;
     padding: 0 5px;
+    margin-bottom: 70px;
   }
 }
 
@@ -44,13 +45,13 @@
 }
 
 .faq-block__content h3 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .faq-block__content p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 24px;
 }
 
 .faq__video-container {
@@ -91,4 +92,70 @@
 
 .active .faq-block__body {
   display: block;
+}
+
+.lesson iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.lessons__wrapper {
+  position: relative;
+}
+
+.lessons__decor-shadow {
+  position: absolute;
+  z-index: 1;
+  background-color: $main-color;
+}
+
+.lessons__decor-shadow--lesson1 {
+  width: 429px;
+  height: 429px;
+  border-radius: 50%;
+  filter: blur(170px);
+  top: 700px;
+  right: 0;
+  @media (max-width: $tablet-width) {
+    top: 1100px;
+  }
+}
+
+.lessons__decor-shadow--lesson2 {
+  width: 429px;
+  height: 429px;
+  border-radius: 50%;
+  filter: blur(120px);
+  top: 2173px;
+  left: -100px;
+  @media (max-width: $tablet-width) {
+    width: 429px;
+    height: 429px;
+    border-radius: 50%;
+    filter: blur(160px);
+    top: 2396px;
+    left: -100px;
+  }
+}
+.lessons__decor-shadow--lesson3 {
+  width: 221px;
+  height: 221px;
+  border-radius: 50%;
+  filter: blur(80px);
+  bottom: 222px;
+  right: 148px;
+  @media (max-width: $tablet-width) {
+    right: -13px;
+    bottom: 144px;
+  }
+}
+
+.lesson .faq-block,
+.lesson__heading,
+.lesson .btn {
+  position: relative;
+  z-index: 2;
 }

@@ -52,8 +52,12 @@ class App {
 
   onFaqBlockClick() {
     this.faqBlocks.forEach(function (element) {
-      element.addEventListener("click", function (e) {
+      element.addEventListener("click", function () {
+        const wasActive = element.classList.contains("active");
         element.classList.toggle("active");
+        if (wasActive) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       });
     });
   }
