@@ -12,6 +12,18 @@
     background: transparent;
     border: 1px solid $main-color;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 80px 10px;
+
+    .btn {
+      font-size: 19px;
+
+      &>span {
+        display: none;
+      }
+    }
+  }
 }
 
 .trade__heading {

@@ -74,6 +74,7 @@ button {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 50px;
+
   @media (max-width: $tablet-width) {
     padding: 0;
   }
@@ -88,6 +89,10 @@ button {
   &--small {
     margin-bottom: 25px;
     font-size: 36px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
   }
 }
 

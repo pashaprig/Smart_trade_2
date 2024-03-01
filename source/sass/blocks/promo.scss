@@ -8,10 +8,16 @@
     margin: 0 auto;
     fill: transparent;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    padding-left: 20px;
+    text-align: left;
+    background: url('../img/bcg/promo-bcg.webp') no-repeat 70%;
+  }
 }
 
 .promo__heading {
-  line-height: 58px;
   text-transform: uppercase;
   text-align: center;
   padding: 0 160px;
@@ -21,9 +27,9 @@
   }
 
   @media (max-width: $tablet-width) {
+    text-align: left;
     font-size: 32px;
-    line-height: 38px;
-    padding: 0 5px;
+    padding: 0;
   }
 }
 
@@ -34,7 +40,8 @@
   text-align: center;
 
   @media (max-width: $tablet-width) {
-    padding: 0 20px;
+    padding: 0;
+    text-align: left;
   }
 }
 
@@ -48,6 +55,19 @@
     background: transparent;
     border: 1px solid $main-color;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+
+    .btn {
+      font-size: 19px;
+      margin-bottom: 150px;
+
+      &>span {
+        display: none;
+      }
+    }
+  }
 }
 
 .promo__sub-heading {
@@ -60,4 +80,14 @@
   margin-bottom: 70px;
   padding-right: 160px;
   font-weight: 700;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 375px;
+    padding-right: 0;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-left: -20px;
+    background: url('../img/bcg/why-bcg.webp') no-repeat 100% 0%;
+    background-size: contain;
+  }
 }
